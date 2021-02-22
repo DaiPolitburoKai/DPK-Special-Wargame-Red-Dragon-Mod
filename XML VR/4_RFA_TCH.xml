@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wargamepatch>
+	<!--T815, HEMTT -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleModernWarfareSupplyDescriptor" name="SUPPLIES 815 HEMTT">
+		<matchconditions>
+			<matchcondition type="property" property="SupplyCapacity">2400</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="SupplyCapacity" type="Float32">2750</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="815 ECON RDA">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">3</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_T815_RDA</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">30</change>
+			<change operation="set" property="MaxPacks" type="UInt32">4</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="815 ECON TCH">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">3</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_T815_Kolos</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">30</change>
+			<change operation="set" property="MaxPacks" type="UInt32">4</change>
+		</changes>
+	</ndfpatch>
+	
+</wargamepatch>

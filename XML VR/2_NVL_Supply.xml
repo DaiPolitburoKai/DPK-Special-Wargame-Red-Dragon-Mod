@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wargamepatch>
+	<!--MUNA -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleModernWarfareSupplyDescriptor" name="SUPPLIES MUNA">
+		<matchconditions>
+			<matchcondition type="property" property="SupplyCapacity">15000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="SupplyCapacity" type="Float32">38000</change>
+		</changes>
+	</ndfpatch>
+	<!--LCU -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleModernWarfareSupplyDescriptor" name="SUPPLIES LCU">
+		<matchconditions>
+			<matchcondition type="property" property="SupplyCapacity">10000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="SupplyCapacity" type="Float32">15000</change>
+		</changes>
+	</ndfpatch>
+	
+</wargamepatch>

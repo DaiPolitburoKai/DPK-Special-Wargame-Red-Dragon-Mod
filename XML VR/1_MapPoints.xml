@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\misc\globals.ndfbin" table="TModernWarfareMultiMapInfo" name="mapPoints">
+		<matchconditions>
+			<matchcondition type="property" property="NbMaxPlayers">8</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="ArgentInitialTable" operation="clear" />
+			<change property="ArgentInitialTable" type="UInt32" operation="append">500</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">1000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">1500</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">2000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">3000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">4000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">5000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">6000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">8000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">12000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">16000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">20000</change>
+			<change property="DefaultDestructionScoreToReach" operation="clear" />
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">1000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">2000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">3000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">4000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">6000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">8000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">10000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">12000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">16000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">24000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">32000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">40000</change>
+		</changes>
+	</ndfpatch>
+	<!-- <ndfpatch ndf="pc\ndf\patchable\misc\globals.ndfbin" table="TModernWarfareMultiMapInfo" name="10V10mapPoints">
+		<matchconditions>
+			<matchcondition type="property" property="NbMaxPlayers">20</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="ArgentInitialTable" operation="clear" />
+			<change property="ArgentInitialTable" type="UInt32" operation="append">5000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">6000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">8000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">12000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">16000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">20000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">25000</change>
+			<change property="ArgentInitialTable" type="UInt32" operation="append">30000</change>
+			<change property="DefaultDestructionScoreToReach" operation="clear" />
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">10000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">12000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">16000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">24000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">32000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">40000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">50000</change>
+			<change property="DefaultDestructionScoreToReach" type="UInt32" operation="append">60000</change>
+		</changes>
+	</ndfpatch> -->
+</wargamepatch>

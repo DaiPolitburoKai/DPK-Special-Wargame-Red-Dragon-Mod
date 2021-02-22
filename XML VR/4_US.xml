@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wargamepatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="HEMTT ECON">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">3</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_HEMTT</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">4</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">25</change>
+			<change operation="set" property="MaxDeployableAmount" key="2" type="Int32">8</change>
+		</changes>
+	</ndfpatch>
+	
+	
+	
+</wargamepatch>

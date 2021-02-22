@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wargamepatch>
+	<!--FOBs -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteDescriptor" name="SUPPLIES FOB MAX PACK">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">3</matchcondition>
+			<matchcondition type="property" property="Category">8</matchcondition>
+			<matchcondition type="property" property="MaxPacks">2</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">4</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">50</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteDescriptor" name="SUPPLIES FOB PRICE">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">3</matchcondition>
+			<matchcondition type="property" property="Category">8</matchcondition>
+			<matchcondition type="property" property="MaxPacks">4</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">50</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleModernWarfareSupplyDescriptor" name="SUPPLIES FOB ">
+		<matchconditions>
+			<matchcondition type="property" property="SupplyCapacity">16000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="SupplyCapacity" type="Float32">36000</change>
+		</changes>
+	</ndfpatch>
+	
+</wargamepatch>

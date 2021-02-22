@@ -1,0 +1,214 @@
+<wargamepatch>
+	<!--
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="FIN Zeds Nostovaki HPD" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor">
+		<matchconditions>
+			<matchcondition type="property" property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ControllerName" type="TableString">DamageController</change>
+			<change operation="set" property="CommonDamageDescriptor">
+				<reference table="TModernWarfareCommonDamageDescriptor">
+					<matchconditions>
+						
+						<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+							<matchconditions>
+								<matchcondition type="property" property="ClassNameForDebug">Unit_Nostovaki</matchcondition>
+							</matchconditions>
+						</matchcondition>
+						
+						<matchcondition type="property" property="BlindageProperties">53593</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+			<change operation="set" property="MaxDamages" type="Float32">8</change>
+			<change operation="set" property="MaxHPForHUD" type="UInt32">8</change>
+			<change operation="set" property="Experience" type="TableString">Experience</change>
+			<change operation="set" property="AutoOrientation" type="Boolean">True</change>
+		</changes>
+	</ndfpatch>
+	-->
+	<!--
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki HPM" />
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector">
+		<matchconditions>
+			<matchcondition property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ControllerName" type="TableString">DamageController</change>
+			<change operation="Append" property="Selection" type="List">
+				<reference table="TModuleSelectorFilter">
+					<matchconditions>
+						<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+							<matchconditions>
+								<matchcondition type="property" property="ClassNameForDebug">Unit_Nostovaki</matchcondition>
+							</matchconditions>
+						</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+			<change operation="set" property="Default">
+				<reference table="TModernWarfareDamageModuleDescriptor">
+					<matchcondition property="__order">last</matchcondition>
+				</reference>
+			</change>
+		</changes>
+	</ndfpatch>
+	-->
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds Nostovaki">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">6</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_Nostovaki</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">9</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">8</change>
+			<!--
+			<change operation="set" property="Modules" key="11" type="map">
+				<map>
+					<key type="TableString">Damage</key>
+					<value type="ObjectReference">
+						<reference table="TModuleSelector">
+							<matchcondition property="__order">last</matchcondition>
+						</reference>
+					</value>
+				</map>
+			</change>
+			<change operation="select" property="Modules" key="11" />
+			
+			
+			
+			<change operation="set" key="13" property="Modules" type="map">
+				<reference table="TModuleSelector">
+					<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki GCM</matchcondition>
+				</reference>
+			</change>
+			-->
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds T-55M MATTI">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">9</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_T55M_Matti</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">9</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">42</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds Charioteer">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">9</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_Charioteer</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">9</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">12</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds Sturmi">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">8</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_Sturmi</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">12</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">8</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds ITPSV Marksmen">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">13</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_ITPSV_Marksman</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">5</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">40</change>
+		</changes>
+	</ndfpatch>
+	
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds Mi-8 KT">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">11</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_MI_8T_KT</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">7</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">45</change>
+		</changes>
+	</ndfpatch>
+	
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds Mi-8">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">11</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_MI_8T_Fin</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">7</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">32</change>
+		</changes>
+	</ndfpatch>
+	
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds BTR-50">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">8</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_BTR_50</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">15</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">2</change>
+		</changes>
+	</ndfpatch>
+	
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds AVIA 28">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">7</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_Avia_28</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">4</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">100</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds MiG-21 Bis">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+			<matchcondition type="property" property="Factory">7</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_Mig21Bis_Fin</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">6</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">4</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">3</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">80</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

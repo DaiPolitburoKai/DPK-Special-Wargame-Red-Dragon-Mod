@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\gdconstanteoriginal.ndfbin" table="TWargameTunableConstante" name="plus 4 Income">
+		<changes>
+			<change property="IncomeMultiplierInPercent" type="UInt32" operation="append">225</change>
+			<change property="IncomeMultiplierInPercent" type="UInt32" operation="append">300</change>
+			<change property="IncomeMultiplierInPercent" type="UInt32" operation="append">450</change>
+			<change property="IncomeMultiplierInPercent" type="UInt32" operation="append">600</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

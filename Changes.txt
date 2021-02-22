@@ -1,0 +1,220 @@
+﻿TCH		Dana					Price 90-85
+
+UK		FV432(M)				Available to Marine Decks
+UK		FV432(M)				Price -5
+UK		FV432 RARDEN			Available to Marine Decks
+UK		ROVER PINKY				Available to Marine Decks
+UK		TORNADO F.3				Available to Marine Decks
+UK		TORNADO F.3				Price 108
+UK		TORNADO F.2				Available to Marine Decks
+UK		LAAD Javelin			Price 15->12
+UK		LAAD Blowpipe			Price 5->4
+UK 		Gurkhas					Price 30->27
+UK 		Gurkhas					Availability 0/0/14/11/8 (0/0/12/8/0)
+UK 		Gurkhas '85				Price 30->27
+UK 		Gurkhas '85				Availability 0/0/12/9/7 (0/0/10/7/0)
+UK		AS90					Price 130->110
+UK		Challenger 1 Mk. 2		Available to 1985 Decks
+UK		Challenger 1 Mk. 2		Price 120->108
+UK		Challenger 1 Mk. 1		Price 105->90
+UK		Cheiftan Marksmen		Available to Marine Decks
+
+FR		AMX-30 Roland			Available to Motorized Decks
+FR		AMX-30 Roland 3			Available to Motorized Decks
+FR		AMX AuF1				Price 110->80
+FR		Leclerc					Max Cards 1->2
+FR		Leclerc					Price 165->155
+FR		AMX-32					Max Cards 1->2
+FR		AMX-30B2 BRENNUS		Price 65->62
+FR		Crotale					Price 65->60
+
+JAP		Kim Sam Closed Arrow	Available to Mechanized Decks	
+JAP		Tan-Sam Short Arrow		Available to Mechanized Decks
+JAP		OH-1 Ninja				Available to Marine, Mechanized, Support Decks
+JAP		OH-1 Ninja				Price 90->85
+JAP		OH-1 Ninja				OpticalStrength 220->260
+JAP		OH-1 Ninja				OpticalStrengthAltitude 170->260
+JAP		OH-1 Ninja				PorteeVision 260000->320000
+JAP		OH-1 Ninja 				PorteeVisionTBA 364000->432000
+JAP		OH-1 Ninja				OpticalStrengthAntiRadar null->450
+JAP		OH-1 Ninja				Type 91 Ammo: 6
+JAP		F-1						Max Cards 1->2
+JAP		F-1						ECM 20->30%
+JAP		F-1						GCS M-117 Range: 3500->3850
+JAP		F-4EJ					Max Cards 1->2
+JAP		F-4EJ Kai				ECM 20->35%
+JAP		F-15J					ECM 40->55%
+JAP		F-86F Kyokko			Max Cards 1->2
+JAP		F-86F Kyokko			ECM: 0->5%
+JAP		CHUGATA CARGO			Price 10->7
+JAP		Type 90					Price 170->160
+
+ROK		K1						Max Cards 2->3
+
+HOL		M109A5 NL				Available to Mechanized, Motorized Decks
+HOL		M727 I-HAWK HEOS		Price 70->65
+HOL		Leopard 2A1 			Price 100->95 (GPMG is inferior to German GPMG)
+HOL		CHEETAH PRTL A1			Added Stabilizer (35%)
+
+RFA		FRR Roland 3			Added to Mechanized Decks
+RFA		FRR Roland 3			Price 65->60
+RFA		FUCHS Fufu				Price 120->115
+
+US		M125A1					Available to Airborne Decks
+US		M48 Chaparral			Available to Airborne Decks
+US		HEMTT					Availability 0/8/0/0/0
+US		M35 CARGO				Price 15->10
+US		LAV-C2					Price 120->105
+US		M1A1(HC)				Price 155->140 (Fucking Jarheads)
+US		M60A1 ERA				Price 65->60 (Fucking Jarheads)
+US		M8 AGS					Availabile to Marine Decks (Fucking Jarheads)
+US		F-15A					Price 140
+
+
+
+ALL		FOB						Price 75->50
+ALL		FOB						Max Packs 2->4
+ALL		FOB						Supply 16000->36000 (36k)
+
+US		HEMTT					Supply 2400->2750
+US		HEMTT					Cost 40->25
+US		HEMTT					Max Packs 2->4
+
+TCH		T815					Supply 2400->2750
+TCH		T815					Cost 40->30
+TCH		T815					Max Packs 2->4
+
+RFA		T815					Supply 2400->2750
+RFA		T815					Cost 40->30
+RFA		T815					Max Packs 2->4
+
+RDF		Muna	`				Supply 15000->38000 (38k)
+
+BLF		LCU						Supply 10000->15000 (15k)
+
+SOV		Mi-26					Supply 6000->8000 (8k)
+
+ALL		MAP Rules				Starting Points ADD				05000/06000/08000/12000/16000/20000
+								VP (Destruction) Points ADD		10000/12000/16000/24000/32000/40000
+							ON:	all non 10v10 maps
+
+ALL		Deck Rules				Base Points: 55
+ALL		Deck Rules				Base Infantry Slots: 7
+ALL		Deck Rules				Base Tank, Support, Logistics, Plane, Helo Slots: 6
+
+ALL		Deck Rules				Logistics Slot Cost: 	1/1/1/1/2/3/		/1/1/1/1/1/1				(12)
+ALL		Deck Rules				Support Slot Cost: 		1/1/2/2/3/4/		/1/1/1/1/2/2				(12)
+ALL		Deck Rules				Infantry Slot Cost: 	1/1/1/1/2/2/3/        /1/1/1/1/1/1/1/1/1		(16)
+ALL		Deck Rules				Tanks Slot Cost: 		1/1/1/2/2/3/		/1/1/1/1/1/1				(12)
+ALL		Deck Rules				Recon Slot Cost: 		1/1/2/2/3/		  /1/1/1/1/1/1/1				(12)
+ALL		Deck Rules				Vehicle Slot Cost: 		1/1/2/2/3/		  /1/1/1/1/1/1/1				(12)
+ALL		Deck Rules				Helo Slot Cost: 		1/2/2/3/3/4/		/1/1/1/2/2/2				(12)
+ALL		Deck Rules				Plane Slot Cost: 		1/2/3/3/4/5/		/1/1/1/2/2/2				(12)
+
+
+ALL		Deck Rules				Motorized +1 Slots to Recon
+ALL		Deck Rules				Motorized +2 Slots to Infantry
+ALL		Deck Rules				Motorized -1 Activation Cost to Helo
+ALL		Deck Rules				Motorized -2 Activation Cost to Recon (Basically 1 pt per Recon Card)
+ALL		Deck Rules				Motorized +1 XP to Recon
+ALL		Deck Rules				Motorized +1 XP to Vehicle
+ALL		Deck Rules				Motorized +30% Availability to Recon, Infantry
+ALL		Deck Rules				Motorized +5% Availability to Support
+ALL		Deck Rules				Motorized +1 Activation Cost for Tank
+
+ALL		Deck Rules				Airborne +1 Slots to Recon, Plane, Helo
+ALL		Deck Rules				Airborne +2 XP to Planes (Total +3)
+ALL		Deck Rules				Airborne +1 XP to Helo (Total +2)
+ALL		Deck Rules				Airborne -1 Activation Cost to Planes, Helo
+ALL		Deck Rules				Airborne +35% Availability for Helo, Plane
+ALL		Deck Rules				Airborne -2 Slots for Tank
+ALL		Deck Rules				Airborne -1 Slots for Logistics, Support
+ALL		Deck Rules				Airborne +1 Activation Cost for Tank
+ALL		Deck Rules				Airborne +1 Activation Cost for Logistics
+
+ALL		Deck Rules				Marine +1 Slots Available to Infantry, Vehicle
+ALL		Deck Rules				Marine +1 XP to Plane (Total 2)
+ALL		Deck Rules				Marine +2 XP to Helo (Total 2)
+ALL		Deck Rules				Marine +2 XP to Naval (Total 2)
+ALL		Deck Rules				Marine -1 Activation Cost to Helo
+ALL		Deck Rules				Marine +20% Availability for Infantry
+ALL		Deck Rules				Marine +20% Availability for Naval
+
+ALL		Deck Rules				Mechanized +30% Availability to Vehicle
+ALL		Deck Rules				Mechanized +10% Availability to Infantry
+ALL		Deck Rules				Mechanized +1 Slots to Tank, Logistics
+ALL		Deck Rules				Mechanized -1 Activation Cost to Tank
+ALL		Deck Rules				Mechanized -1 Slots for Helo
+ALL		Deck Rules				Mechanized -10% Availability to Helo
+
+ALL		Deck Rules				Armored +20% Availability to Tanks
+ALL		Deck Rules				Armored +2 Slots to Tank
+ALL		Deck Rules				Armored +1 Slots to Logistics
+ALL		Deck Rules				Armored -1 Activation Cost to Tank
+ALL		Deck Rules				Armored -1 Slots for Helo
+ALL		Deck Rules				Armored -1 XP for Recon, Helo
+ALL		Deck Rules				Armored +1 Activation Cost for Helo
+ALL		Deck Rules				Armored -10% Availability to Helo
+
+ALL		Deck Rules				No Specialization (DA24755ED9380000) -1 XP for Recon, Plane, Helo, Support, Vehicle, Support
+ALL		Deck Rules				No Specialization (DA24755ED9380000) +1 slots for Infantry, Logistics
+
+ALL		Deck Rules				Support +10% Availability to Support, Logistics
+
+ALL		Deck Rules				1985: +2 Activation Points (7 Total), +30% Availability for Logistics, +1XP to Vehicle and Support
+ALL		Deck Rules				1980: +5 Activation Points (15 Total), +30% Availability for Vehicle and Support, +80% Availability for Logistics, +1XP to Vehicle, Support, Plane, Helo, Tank
+
+SCAND	Deck Rules				+5% Availability of Logistics, Infantry, Recon, Vehicle, Tank, Helo, Plane
+NLGR	Deck Rules				Rerolled as what fucking Eurocorp should be (NL, RFA, FR, UK)
+EURO	Deck Rules				Added UK (NLGR for those without DLC)
+NORAD	Deck Rules				+1 Logistics
+NORAD	Deck Rules				-1 Logistics Activation Cost
+NORAD	Deck Rules				+10% Availability of Logistics, Recon, Infantry, Helo, Plane 
+CMW		Deck Rules				+5 Activation Points
+CMW		Deck Rules				+10% Availability of Support
+CMW		Deck Rules				+20% Availability of Plane, Helo, Recon
+
+US		Deck Rules				+1 Logistics
+US		Deck Rules				+5% Availability of Logistics
+FR		Deck Rules				+20% Availability of Support, Plane (Total 40%)
+JAP		Deck Rules				-1 Recon Activation Cost
+JAP		Deck Rules				+1 Recon XP
+JAP		Deck Rules				+30% to Support, Recon (Total 60%)
+
+
+Zeds (FIN/YUG)
+FINPOL	Deck Rules				Activation Points: 45
+FINPOL	Deck Rules				+45% Availability
+FINPOL	Deck Rules				Add URSS to Coalition
+FINPOL	Deck Rules				+4 Activation Slots to Infantry, Tank, Vehicle, Plane, Helo
+FINPOL	Deck Rules				+2 Activation Slots to Recon, Logistics, Support, Naval
+FINPOL	Deck Rules				+2 XP to Plane, Helo
+FINPOL	Deck Rules				+1 XP to Tank, Support
+FIN		Deck Rules				Activation Points: 45
+FIN		Deck Rules				+85% Availability
+FIN		Deck Rules				+4 Activation Slots to Infantry, Tank, Vehicle, Plane, Helo
+FIN		Deck Rules				+2 Activation Slots to Recon, Logistics, Support, Naval
+
+FIN		Nostovaki				Price 10->8
+FIN		Nostovaki				Max Cards 1->9
+FIN		Charioteer				Price 15->12
+FIN		Charioteer				Max Cards 2->9
+FIN		T-55M MATTI				Price 50->42
+FIN		T-55M MATTI				Max Cards 2->9
+FIN		Sturmi (STuG)			Price 10->8
+FIN		Sturmi (STuG)			Max Cards 2->9
+
+FIN		Sturmi (STuG)			Fuel/Autonomy 1100L/600km
+FIN		ITPSV Marksmen			Availability 0/15/11/7/0 (from 0/6/4/0/0)
+FIN		ITPSV Marksmen			Price 60->35
+
+FIN		ITPSV Marksmen			Max Cards 1->5
+
+FIN		MI-8T					Price32
+FIN		MI-8T					Max Cards 1->7	
+FIN		MI-8T KT				Price 50->45
+FIN		MI-8T KT				Max Cards 1->7	
+FIN		BTR-50					Price 5->2
+FIN		AVIA 28					Price 110->100
+FIN		AVIA 28					Availability 0/4/0/0/0
+FIN		MiG-21Bis				Availability 6/0/4/0/3
