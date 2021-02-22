@@ -1,15 +1,91 @@
-﻿TCH		Dana					Price 90-85
+﻿TCH		Dana					Price 90-80
+TCH		Dana					Availability
+TCH		Ondava					Max Packs 1->2
+TCH		Ondava					Availability
+TCH		2S7 Pivonka				Price 100->90
+TCH		STROP 2					Price 60->50
+TCH		STROP 2					Igla Ammo: x2 (NbTirSalve)
+TCH		STROP 2					AirMax Range 2625m
+TCH		STROP 2					Max Packs 1->2
+TCH		ShM vz. 85 PRAM-S		Salvos +2
+TCH		RM-70					Price 100->70
+TCH		RM-70					Availability
+TCH		T815					Supply 2400->2750
+TCH		T815					Cost 40->30
+TCH		T815					Max Packs 2->4
+TCH		Granatomet AGS-17		12 man squad? (AGS-17 Ammo to 360, Double Vz. 58 RoF, Add GPMG)
+TCH		Granatomet AGS-17		Availability
+TCH		FOB						Max Cards 3 (Exception of a latter rule)
+TCH		FOB						Availability 2
+TCH		T-72S					Adding a Coaxial GPMG
+TCH		T-72M2 Moderna			Adding a Coaxial GPMG
+TCH		T-72M1cz				Adding a Coaxial GPMG
+TCH		T-72M1M					Adding a Coaxial GPMG
+TCH		T-55AM2 Dyna-1			Adding a Coaxial GPMG
+TCH		T-55AMB 				Adding a Coaxial GPMG
+
+RDA		T815					Supply 2400->2750
+RDA		T815					Cost 40->30
+RDA		T815					Max Packs 2->4
+RDA		Fla-SFL 2S6				Price 85->75
+RDA		FJB-40					Price 25->21
+RDA		Wachregiment			Price 25->21
+RDA		MiG-25RBF				Price 140->135
+RDA		Q-5D					Price 115->100
+
+POL		MAZ-543 Newa-SC			Cost 90->80
+POL		Sopel 					Price 45->42
+POL		PPZR Grom				Price 20->15
+POL		T-72S					Price 125->115
+POL		T-72M2 WILK				Price 120->110
+POL		PT-91 Twardy			Price 155->144
+
+DEN		LLRkt HAMLET			Price 10->7
+DEN		M/151A1 KV				Price 100->95
+DEN		SKH M/109A3				Price 100->92
+DEN		Starfighter				Price 80->72
+DEN		F-100D					Price 65->56
+DEN		Ildstottegruppe			Price 10->8
+DEN		Ildstottegruppe'90		Price 15->12
+
+SWE		IKV 103					Price 10->8
+SWE		BKAN 1A					Price 120->110
+SWE		VEAK 40					Price 40->38
+
+NOR		Rover KPV				Price 110->100
+NOR		Stormer					Price 20->18
+NOR		NASAMS					Price 85->82
+NOR		AS.350					Price 55->48
+NOR		M8 Panserbil			Price 15->14
+NOR		F-5A PUFF				Price 80->78
+
+CAN		Blowpipe				Price 5->4
+CAN		Javelin	G/L				Price 15->12
+CAN		Canadian Airborne		Price 20->16
+CAN		Canadian Airborne'90	Price 25->22
+CAN		Bison 81MM				Price 35->30
+CAN		Bison 81MM				Available to Airborne
+CAN		Bison 81MM				Availability 0/7/5/0/0
+CAN		EF-101B Electric Voodoo	Price 90->75
+CAN		Chimera 				Price 110->80
+CAN		CF-104 Starfighter		Price 70->65
+CAN		CF-104 Starfighter		Add Smoke?
+CAN		CF-116 Freedom Fighter	Mk 83 is now NPLM
 
 UK		FV432(M)				Available to Marine Decks
 UK		FV432(M)				Price -5
 UK		FV432 RARDEN			Available to Marine Decks
 UK		ROVER PINKY				Available to Marine Decks
 UK		TORNADO F.3				Available to Marine Decks
-UK		TORNADO F.3				Price 108
+UK		TORNADO F.3				Price 135->120
 UK		TORNADO F.2				Available to Marine Decks
+UK		Lynx 3					Available to Marine Decks
+UK		Lynx 3					Price 100->85
+UK		Lynx 3					Replace with Lynx 2 Fuel Module
+UK		Lynx 2					Price 75->65
 UK		LAAD Javelin			Price 15->12
 UK		LAAD Blowpipe			Price 5->4
-UK 		Gurkhas					Price 30->27
+UK 		Gurkhas					Price 30->25
 UK 		Gurkhas					Availability 0/0/14/11/8 (0/0/12/8/0)
 UK 		Gurkhas '85				Price 30->27
 UK 		Gurkhas '85				Availability 0/0/12/9/7 (0/0/10/7/0)
@@ -18,18 +94,33 @@ UK		Challenger 1 Mk. 2		Available to 1985 Decks
 UK		Challenger 1 Mk. 2		Price 120->108
 UK		Challenger 1 Mk. 1		Price 105->90
 UK		Cheiftan Marksmen		Available to Marine Decks
+UK		Cheiftan Marksmen		Price 60->50
+UK		Stormer HVM				Max Cards 1->2
+UK		Royal Marines			LAT Ammo: 10
+UK		Royal Marines			Price 30->28
+UK		Royal Marines			12 Man Squad? (Increase Bren Ammo)
+UK		Royal Marines '90		LAT Ammo: 10
+UK		Royal Marines '90		12 Man Squad? (Increase SAW Ammo)
 
 FR		AMX-30 Roland			Available to Motorized Decks
 FR		AMX-30 Roland 3			Available to Motorized Decks
 FR		AMX AuF1				Price 110->80
 FR		Leclerc					Max Cards 1->2
 FR		Leclerc					Price 165->155
+FR		Leclerc					Adding a Coaxial GPMG
 FR		AMX-32					Max Cards 1->2
 FR		AMX-30B2 BRENNUS		Price 65->62
 FR		Crotale					Price 65->60
+FR		AMX-10 RC SB			Price 40->36
+FR		Tigre HAP				ECM 0->20%
+FR		Tigre HAP				Price 100->94
+FR		Tigre HAD				ECM 0->20%
+FR		Gazekke 341F Celtic		Price 65->58
 
 JAP		Kim Sam Closed Arrow	Available to Mechanized Decks	
 JAP		Tan-Sam Short Arrow		Available to Mechanized Decks
+JAP		Tan-Sam Short Arrow		Aircraft Range: 2626->3150
+JAP		Tan-Sam Short Arrow		Ammo 8->12
 JAP		OH-1 Ninja				Available to Marine, Mechanized, Support Decks
 JAP		OH-1 Ninja				Price 90->85
 JAP		OH-1 Ninja				OpticalStrength 220->260
@@ -38,6 +129,11 @@ JAP		OH-1 Ninja				PorteeVision 260000->320000
 JAP		OH-1 Ninja 				PorteeVisionTBA 364000->432000
 JAP		OH-1 Ninja				OpticalStrengthAntiRadar null->450
 JAP		OH-1 Ninja				Type 91 Ammo: 6
+JAP		Type 91					(OH-1 Ninja, PSAM, Kin-Sam) Range Aircraft: 1960->2275m
+JAP		Type 91					(OH-1 Ninja, PSAM, Kin-Sam) Range Helo: 2450->2626m
+JAP		Chu-MAT					(Chu-MAT, Mitsubishi Chu-MAT) Range: 2450->2625m, +40% Missile Speed
+JAP		Type 96 WAPC			Adding a fucking GPMG or HMG
+JAP		Type 89 IFV				Adding a Coaxial GPMG
 JAP		F-1						Max Cards 1->2
 JAP		F-1						ECM 20->30%
 JAP		F-1						GCS M-117 Range: 3500->3850
@@ -48,51 +144,115 @@ JAP		F-86F Kyokko			Max Cards 1->2
 JAP		F-86F Kyokko			ECM: 0->5%
 JAP		CHUGATA CARGO			Price 10->7
 JAP		Type 90					Price 170->160
+JAP		Type 90					Adding a Coaxial GPMG
 
 ROK		K1						Max Cards 2->3
+ROK		K1						Price 90->80
+ROK		K1A1					Max Cards 1->2
+ROK		YEBIGUN					Price 5->4
+ROK		YEBIGUN					Max Cards 2->3
+ROK		KAFV 40/50				Price 15->12
+ROK		Jiksa Hwagi-Ban			Price 15->12
+ROK		Haebyung				Price 25->21
+ROK		Haebyung'90				Price 30->27
+ROK		A-37B Dragonfly			Price 70->65
+ROK		F-5A					Price 80->72
+ROK		KF-5E Jegong-Ho			Price 75->68
+ROK		KF-16C Block 52D		Price 160->150
+ROK		F-86F Sabre				Price 65->58
+ROK		F-D Peace Pheasant I 	Price 120->100
 
 HOL		M109A5 NL				Available to Mechanized, Motorized Decks
-HOL		M727 I-HAWK HEOS		Price 70->65
+HOL		M727 I-HAWK HEOS		Price 75->65
 HOL		Leopard 2A1 			Price 100->95 (GPMG is inferior to German GPMG)
 HOL		CHEETAH PRTL A1			Added Stabilizer (35%)
+HOL		AH-64 Escort			M151 Hydra Ammo: +50%
+HOL		YPR-765 PRAT			Price 60->55
+HOL		YPR-765-25				Price 15->12
+HOL		NF-5A					Price 90->80
+HOL		NF-5A					ECM 10->15%
+HOL		NF-5B					Price 90->80
+HOL		NF-5B					ECM 10->15%
 
 RFA		FRR Roland 3			Added to Mechanized Decks
 RFA		FRR Roland 3			Price 65->60
+RFA		Marder 1A1				Price 20->18
+RFA		Marder 1A3				Price 25->24
+RFA		Marder 2				Price 30->28
+RFA		KAnonenJagdPanzer		Price 20->18
 RFA		FUCHS Fufu				Price 120->115
+RFA		Alpha Jet A				ECM 0->5%
+RFA		PAH-2 TIGER				ECM 0->15%
 
-US		M125A1					Available to Airborne Decks
-US		M48 Chaparral			Available to Airborne Decks
 US		HEMTT					Availability 0/8/0/0/0
 US		M35 CARGO				Price 15->10
 US		LAV-C2					Price 120->105
-US		M1A1(HC)				Price 155->140 (Fucking Jarheads)
+US		M1A1(HA) Abrams			Price 140->135
+US		M1A1(HC) Abrams			Price 155->135 (Fucking Jarheads)
 US		M60A1 ERA				Price 65->60 (Fucking Jarheads)
 US		M8 AGS					Availabile to Marine Decks (Fucking Jarheads)
-US		F-15A					Price 140
-
-
-
-ALL		FOB						Price 75->50
-ALL		FOB						Max Packs 2->4
-ALL		FOB						Supply 16000->36000 (36k)
-
+US		M8 AGS					Price 55->50
+US		F-15A					Price 130->110
+US		F-15C					Price 170->160
+US		F-16C Block 52			Price 160->150
+US		F-4J Phantom II			Price 75->65
+US		F-4S Phantom II			Price 120->105
+US		AV-8C Harrier			Price 80->65
+US		F-7E Corsair II			Price 75->65
+US		A-6A Intruder			Price 75->72
+US		A-4M Skyhawk II			Price 60->50
+US		F-4G Wild Weasel V		Price 100->80
+US		EA-6B Prowler			Price 110->95
 US		HEMTT					Supply 2400->2750
 US		HEMTT					Cost 40->25
 US		HEMTT					Max Packs 2->4
+US		AH-1W Supercobra		ECM 0->15%
+US		AH-64D Longbow			ECM 0->10%
+US		SH-60B Sea Hawk			ECM 0->10%
+US		FOB						Price 75->40 (Exception of a latter rule)
 
-TCH		T815					Supply 2400->2750
-TCH		T815					Cost 40->30
-TCH		T815					Max Packs 2->4
+SOV		Mi-26					Supply 6000->8000 (8k)
+SOV		2K22 Tunguska			Price 85->75
+SOV		2K22 Tunguska-M			Price 100->95
+SOV		9K37 BUK-M1				Price 85->80
+SOV		9K37 BUK				Price 70->68
+SOV		MT-LB Vasilek			Price 45->36
+SOV		BM-30 Smerch 			Price 140->120
+SOV		BM-27 Uragan			Price 120->100
+SOV		BM-21 Grad				Price 75->70
+SOV		Ka-52					ECM 0->30%
+SOV		Mi-24K					Price 110->90
+SOV		T-64BV1					Price 110->100
+SOV		BMP-1D					Price 20->18
+SOV		2S15 Norov				Price 35->30
+SOV		Ka-50 Akula				ECM 0->20%
+SOV		Ka-29TB					Price 40->35
+SOV		IL-102					Price 180->150
+SOV		Su-27S					Price 155->150
 
-RFA		T815					Supply 2400->2750
-RFA		T815					Cost 40->30
-RFA		T815					Max Packs 2->4
+CHI		ZTZ-59-II				Price 35->32
+CHI		ZTZ-59-IIA				Price 45->38
+CHI		ZTZ-80					Price 50->48
+CHI		ZTZ-88B					Price 60->58
+CHI		ZTZ-88A					Price 70->65
+CHI		ZTZ-85-II				Price 65->60
+CHI		ZTZ-85-IIA				Price 80->75
+CHI		ZTZ-85-III				Price 140->135
+CHI		PTZ-89					Price 65->55
+CHI		PTZ-59					Price 50->40
+CHI		WZ-550					Price 80->70
+CHI		ZZZ-59-I				Price 135->120
+CHI		Yubeiyi					Max Cards 1->3
+CHI		Yubeiyi					Price 5->2
 
 RDF		Muna	`				Supply 15000->38000 (38k)
 
 BLF		LCU						Supply 10000->15000 (15k)
+BLF		Kongo					Max Cards 1->2
 
-SOV		Mi-26					Supply 6000->8000 (8k)
+ALL		FOB						Price 75->50
+ALL		FOB						Max Packs 2->4
+ALL		FOB						Supply 16000->36000 (36k)
 
 ALL		MAP Rules				Starting Points ADD				05000/06000/08000/12000/16000/20000
 								VP (Destruction) Points ADD		10000/12000/16000/24000/32000/40000
@@ -174,6 +334,7 @@ CMW		Deck Rules				+5 Activation Points
 CMW		Deck Rules				+10% Availability of Support
 CMW		Deck Rules				+20% Availability of Plane, Helo, Recon
 
+TCH		Deck Rules				+1 Support, +30% Support Availability, +1 Support XP
 US		Deck Rules				+1 Logistics
 US		Deck Rules				+5% Availability of Logistics
 FR		Deck Rules				+20% Availability of Support, Plane (Total 40%)
