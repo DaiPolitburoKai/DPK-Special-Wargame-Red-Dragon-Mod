@@ -396,7 +396,8 @@
 				</map>
 			</change>
 			
-			<change property="ExperienceBonus" operation="clear" />
+			<change operation="set" property="Availability" type="maplist"/>
+			<change property="Availability" operation="clear" />
 			<change operation="add" property="Availability" type="map">
 				<map>
 					<key type="Int32">10</key>
@@ -504,7 +505,8 @@
 				</map>
 			</change>
 			
-			<change property="ExperienceBonus" operation="clear" />
+			<change operation="set" property="Availability" type="maplist"/>
+			<change property="Availability" operation="clear" />
 			<change operation="add" property="Availability" type="map">
 				<map>
 					<key type="Int32">11</key>
@@ -520,4 +522,289 @@
 		</changes>
 	</ndfpatch>
 	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules Marine">
+		<matchconditions>
+			<matchcondition type="property" property="IsNavalDeck">null</matchcondition>
+			<matchcondition type="property" property="ActivationPoints">null</matchcondition>
+			<matchcondition type="property" property="Availability">null</matchcondition>
+			<matchcondition type="property" property="Texture">StrategicLogicManagerHandler</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="ActivationCost" operation="clear" />
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">3</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">3</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			
+			<change property="ExperienceBonus" operation="clear" />
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="Availability" type="maplist"/>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules Mechanized">
+		<matchconditions>
+			<matchcondition type="property" property="IsNavalDeck">null</matchcondition>
+			<matchcondition type="property" property="ActivationPoints">null</matchcondition>
+			<matchcondition type="property" property="Availability">null</matchcondition>
+			<matchcondition type="property" property="Texture">UIWargame2InGameAlertMessagesResource</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="ActivationCost" operation="clear" />
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+						
+			<change operation="set" property="Availability" type="maplist"/>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">-10</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules Armored">
+		<matchconditions>
+			<matchcondition type="property" property="IsNavalDeck">null</matchcondition>
+			<matchcondition type="property" property="ActivationPoints">null</matchcondition>
+			<matchcondition type="property" property="Availability">null</matchcondition>
+			<matchcondition type="property" property="Texture">Wargame2InGameHUDResource</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="ActivationCost" operation="clear" />
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">-2</value>
+				</map>
+			</change>
+			
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">6</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			
+			<change property="ExperienceBonus" operation="clear" />
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="Availability" type="maplist"/>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules Support">
+		<matchconditions>
+			<matchcondition type="property" property="IsNavalDeck">null</matchcondition>
+			<matchcondition type="property" property="ActivationPoints">null</matchcondition>
+			<matchcondition type="property" property="Availability">null</matchcondition>
+			<matchcondition type="property" property="Texture">ShowRoomLogicManagerHandler</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">5</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">5</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="Availability" type="maplist"/>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
 </wargamepatch>

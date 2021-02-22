@@ -316,10 +316,8 @@ ALL		Deck Rules				Armored -1 XP for Recon, Helo
 ALL		Deck Rules				Armored +1 Activation Cost for Helo
 ALL		Deck Rules				Armored -10% Availability to Helo
 
-ALL		Deck Rules				No Specialization (DA24755ED9380000) -1 XP for Recon, Plane, Helo, Support, Vehicle, Support
-ALL		Deck Rules				No Specialization (DA24755ED9380000) +1 slots for Infantry, Logistics
-
 ALL		Deck Rules				Support +10% Availability to Support, Logistics
+ALL		Deck Rules				Support +1 Slots Available to Support, Logistics
 
 ALL		Deck Rules				1985: +2 Activation Points (7 Total), +30% Availability for Logistics, +1XP to Vehicle and Support
 ALL		Deck Rules				1980: +5 Activation Points (15 Total), +30% Availability for Vehicle and Support, +80% Availability for Logistics, +1XP to Vehicle, Support, Plane, Helo, Tank
