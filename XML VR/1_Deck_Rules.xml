@@ -312,9 +312,7 @@
 		</changes>
 	</ndfpatch>
 	
-	<!--
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="FIN Zeds Nostovaki HPD" />
-	-->
+	<!--Specializations-->
 		
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules Motorized">
 		<matchconditions>
@@ -807,4 +805,112 @@
 			</change>
 		</changes>
 	</ndfpatch>
+	
+	<!--Year-->
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules 1985">
+		<matchconditions>
+			<matchcondition type="property" property="IsNavalDeck">null</matchcondition>
+			<matchcondition type="property" property="ActivationPoints">5</matchcondition>
+			<matchcondition type="property" property="Availability">null</matchcondition>
+			<matchcondition type="property" property="Texture">ShowRoomTexture_IconRankRookie</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">7</change>
+			
+			<change operation="set" property="ExperienceBonus" type="maplist"/>
+			<change property="ExperienceBonus" operation="clear" />
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="Availability" type="maplist"/>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules 1980">
+		<matchconditions>
+			<matchcondition type="property" property="IsNavalDeck">null</matchcondition>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="Availability">null</matchcondition>
+			<matchcondition type="property" property="Texture">ShowRoomTexture_IconRankRookieTired</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">14</change>
+			
+			<change operation="set" property="ExperienceBonus" type="maplist"/>
+			<change property="ExperienceBonus" operation="clear" />
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="Availability" type="maplist"/>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">80</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<!--Coalition-->
+	
+	
 </wargamepatch>
