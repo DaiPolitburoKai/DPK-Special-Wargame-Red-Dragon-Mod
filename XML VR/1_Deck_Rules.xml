@@ -312,15 +312,15 @@
 		</changes>
 	</ndfpatch>
 	
-	<!--	
-					
+	<!--
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="FIN Zeds Nostovaki HPD" />
+	-->
+		
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules Motorized">
 		<matchconditions>
-			<matchcondition type="referencedby" table="TShowRoomDeckRuleManager">
-				<matchconditions>
-					<matchcondition type="property" property="ModifiersForUnitType">5E767965E3000000</matchcondition>
-				</matchconditions>
-			</matchcondition>
+			<matchcondition type="property" property="IsNavalDeck">null</matchcondition>
+			<matchcondition type="property" property="ActivationPoints">null</matchcondition>
+			<matchcondition type="property" property="Availability">null</matchcondition>
 			<matchcondition type="property" property="Texture">LogicManagers</matchcondition>
 		</matchconditions>
 		<changes>
@@ -391,5 +391,5 @@
 			</change>
 		</changes>
 	</ndfpatch>
-	-->
+	
 </wargamepatch>
