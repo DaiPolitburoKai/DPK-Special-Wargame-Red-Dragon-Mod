@@ -109,6 +109,7 @@ FIN		Deck Rules				+2 Activation Slots to Recon, Logistics, Support, Naval
 
 FIN		Nostovaki				Price 10->8
 FIN		Nostovaki				Max Cards 1->9
+FIN		Nostovaki				Men in Squad 5->8
 FIN		Charioteer				Price 15->12
 FIN		Charioteer				Max Cards 2->9
 FIN		T-55M MATTI				Price 50->42

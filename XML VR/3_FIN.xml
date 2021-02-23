@@ -1,7 +1,6 @@
 <wargamepatch>
-	<!--
 	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="FIN Zeds Nostovaki HPD" />
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor">
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="FIN Zeds Nostovaki HPD set">
 		<matchconditions>
 			<matchcondition type="property" property="__order">last</matchcondition>
 		</matchconditions>
@@ -10,14 +9,13 @@
 			<change operation="set" property="CommonDamageDescriptor">
 				<reference table="TModernWarfareCommonDamageDescriptor">
 					<matchconditions>
-						
-						<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+						<matchcondition type="referencedby" table="TModernWarfareDamageModuleDescriptor">
 							<matchconditions>
-								<matchcondition type="property" property="ClassNameForDebug">Unit_Nostovaki</matchcondition>
+								<matchcondition type="property" property="ControllerName">DamageController</matchcondition>
+								<matchcondition type="property" property="MaxDamages">15</matchcondition>
+								<matchcondition type="property" property="MaxHPForHUD">15</matchcondition>
 							</matchconditions>
 						</matchcondition>
-						
-						<matchcondition type="property" property="BlindageProperties">53593</matchcondition>
 					</matchconditions>
 				</reference>
 			</change>
@@ -27,22 +25,21 @@
 			<change operation="set" property="AutoOrientation" type="Boolean">True</change>
 		</changes>
 	</ndfpatch>
-	-->
-	<!--
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki HPM" />
 	
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector">
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki HPM" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki HPM set" >
 		<matchconditions>
-			<matchcondition property="__order">last</matchcondition>
+			<matchcondition type="property" property="__order">last</matchcondition>
 		</matchconditions>
 		<changes>
 			<change operation="set" property="ControllerName" type="TableString">DamageController</change>
-			<change operation="Append" property="Selection" type="List">
+			<change operation="set" property="Selection" type="List"/>
+			<change operation="add" property="Selection" type="ObjectReference">
 				<reference table="TModuleSelectorFilter">
 					<matchconditions>
-						<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+						<matchcondition type="referencedby" table="TModuleSelector">
 							<matchconditions>
-								<matchcondition type="property" property="ClassNameForDebug">Unit_Nostovaki</matchcondition>
+								<matchcondition type="property" property="ControllerName">DamageController</matchcondition>
 							</matchconditions>
 						</matchcondition>
 					</matchconditions>
@@ -50,12 +47,13 @@
 			</change>
 			<change operation="set" property="Default">
 				<reference table="TModernWarfareDamageModuleDescriptor">
-					<matchcondition property="__order">last</matchcondition>
+					<matchconditions>
+						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki HPD</matchcondition>
+					</matchconditions>
 				</reference>
 			</change>
 		</changes>
 	</ndfpatch>
-	-->
 	
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds Nostovaki">
 		<matchconditions>
@@ -66,27 +64,13 @@
 		<changes>
 			<change operation="set" property="MaxPacks" type="UInt32">9</change>
 			<change operation="set" property="ProductionPrice" key="0" type="Int32">8</change>
-			<!--
-			<change operation="set" property="Modules" key="11" type="map">
-				<map>
-					<key type="TableString">Damage</key>
-					<value type="ObjectReference">
-						<reference table="TModuleSelector">
-							<matchcondition property="__order">last</matchcondition>
-						</reference>
-					</value>
-				</map>
-			</change>
-			<change operation="select" property="Modules" key="11" />
-			
-			
-			
-			<change operation="set" key="13" property="Modules" type="map">
+			<change operation="set" property="Modules" key="Damage" type="ObjectReference">
 				<reference table="TModuleSelector">
-					<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki GCM</matchcondition>
+					<matchconditions>
+						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki HPM</matchcondition>
+					</matchconditions>
 				</reference>
 			</change>
-			-->
 		</changes>
 	</ndfpatch>
 	
@@ -113,7 +97,7 @@
 			<change operation="set" property="ProductionPrice" key="0" type="Int32">12</change>
 		</changes>
 	</ndfpatch>
-	
+
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds Sturmi">
 		<matchconditions>
 			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
@@ -137,7 +121,7 @@
 			<change operation="set" property="FuelMoveDuration" type="Float32">600</change>
 		</changes>
 	</ndfpatch>
-	
+
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds ITPSV Marksmen">
 		<matchconditions>
 			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
@@ -175,8 +159,7 @@
 			<change operation="set" property="ProductionPrice" key="0" type="Int32">32</change>
 		</changes>
 	</ndfpatch>
-	
-	
+
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds BTR-50">
 		<matchconditions>
 			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
@@ -186,6 +169,19 @@
 		<changes>
 			<change operation="set" property="MaxPacks" type="UInt32">15</change>
 			<change operation="set" property="ProductionPrice" key="0" type="Int32">2</change>
+			<change operation="set" property="Modules" key="Fuel" type="ObjectReference">
+				<reference table="TModuleSelector">
+					<matchconditions>
+						<matchcondition type="references" table="TFuelModuleDescriptor">
+							<matchconditions>
+								<matchcondition type="property" property="ControllerName">FuelController</matchcondition>
+								<matchcondition type="property" property="FuelCapacity">1100</matchcondition>
+								<matchcondition type="property" property="FuelMoveDuration">600</matchcondition>
+							</matchconditions>
+						</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
 		</changes>
 	</ndfpatch>
 	
