@@ -1,5 +1,4 @@
-﻿
-RDF		Muna	`				Supply 15000->38000 (38k)
+﻿RDF		Muna	`				Supply 15000->38000 (38k)
 
 BLF		LCU						Supply 10000->15000 (15k)
 BLF		Kongo					Max Cards 1->2

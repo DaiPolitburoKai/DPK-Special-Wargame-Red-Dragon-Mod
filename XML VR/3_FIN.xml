@@ -126,6 +126,18 @@
 		</changes>
 	</ndfpatch>
 	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TFuelModuleDescriptor" name="FIN Zeds Sturmi Fuel">
+	<matchconditions>
+			<matchcondition type="property" property="ControllerName">FuelController</matchcondition>
+			<matchcondition type="property" property="FuelCapacity">370</matchcondition>
+			<matchcondition type="property" property="FuelMoveDuration">200</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="FuelCapacity" type="Float32">1100</change>
+			<change operation="set" property="FuelMoveDuration" type="Float32">600</change>
+		</changes>
+	</ndfpatch>
+	
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds ITPSV Marksmen">
 		<matchconditions>
 			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
@@ -134,7 +146,7 @@
 		</matchconditions>
 		<changes>
 			<change operation="set" property="MaxPacks" type="UInt32">5</change>
-			<change operation="set" property="ProductionPrice" key="0" type="Int32">40</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">35</change>
 		</changes>
 	</ndfpatch>
 	

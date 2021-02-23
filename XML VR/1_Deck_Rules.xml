@@ -912,5 +912,83 @@
 	
 	<!--Coalition-->
 	
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules SCAND Create" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules SCAND">
+		<matchconditions>
+			<matchcondition type="property" property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">14</change>
+			
+			<change operation="set" property="Availability" type="maplist"/>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules SCAND Set">
+		<changes>
+			<change operation="set" property="ModifiersForCoalition" key="SCAND" type="map">
+				<map>
+					<key type="TableString">SCAND</key>
+					<value type="ObjectReference">
+						<reference table="TDeckRulesModifier">
+							<matchconditions>
+								<matchcondition type="property" property="__createdby">Deck Rules SCAND Create</matchcondition>
+							</matchconditions>
+						</reference>
+					</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	
 	
 </wargamepatch>
