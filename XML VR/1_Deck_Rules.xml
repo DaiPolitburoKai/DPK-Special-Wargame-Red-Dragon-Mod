@@ -58,11 +58,7 @@
 				</map>
 			</change>
 			<change property="DefaultCostMatrix" operation="clear" />
-		</changes>
-	</ndfpatch>
-	
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules 1 LOG">
-		<changes>
+			
 			<change operation="append" property="DefaultCostMatrix" type="map">
 				<map>
 					<key type="Int32">3</key>
@@ -84,11 +80,8 @@
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
-		</changes>
-	</ndfpatch>
-	
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules 1 SUP">
-		<changes>
+			<change operation="unselect" />
+			
 			<change operation="append" property="DefaultCostMatrix" type="map">
 				<map>
 					<key type="Int32">13</key>
@@ -110,10 +103,8 @@
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">2</change>
 				<change operation="add" type="Int32">2</change>
-		</changes>
-	</ndfpatch>
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules 1 INF">
-		<changes>
+			<change operation="unselect" />
+				
 			<change operation="append" property="DefaultCostMatrix" type="map">
 				<map>
 					<key type="Int32">6</key>
@@ -139,10 +130,8 @@
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
-		</changes>
-	</ndfpatch>
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules 1 TNK">
-		<changes>
+			<change operation="unselect" />
+				
 			<change operation="append" property="DefaultCostMatrix" type="map">
 				<map>
 					<key type="Int32">9</key>
@@ -164,10 +153,8 @@
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
-		</changes>
-	</ndfpatch>
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules 1 REC">
-		<changes>
+			<change operation="unselect" />
+				
 			<change operation="append" property="DefaultCostMatrix" type="map">
 				<map>
 					<key type="Int32">10</key>
@@ -189,10 +176,8 @@
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
-		</changes>
-	</ndfpatch>
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules 1 VHC">
-		<changes>
+			<change operation="unselect" />
+				
 			<change operation="append" property="DefaultCostMatrix" type="map">
 				<map>
 					<key type="Int32">8</key>
@@ -214,10 +199,8 @@
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">1</change>
-		</changes>
-	</ndfpatch>
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules 1 HELO">
-		<changes>
+			<change operation="unselect" />
+				
 			<change operation="append" property="DefaultCostMatrix" type="map">
 				<map>
 					<key type="Int32">11</key>
@@ -239,10 +222,8 @@
 				<change operation="add" type="Int32">1</change>
 				<change operation="add" type="Int32">2</change>
 				<change operation="add" type="Int32">2</change>
-		</changes>
-	</ndfpatch>
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules 1 PLN">
-		<changes>
+			<change operation="unselect" />
+				
 			<change operation="append" property="DefaultCostMatrix" type="map">
 				<map>
 					<key type="Int32">7</key>
@@ -264,10 +245,8 @@
 				<change operation="add" type="Int32">2</change>
 				<change operation="add" type="Int32">2</change>
 				<change operation="add" type="Int32">2</change>
-		</changes>
-	</ndfpatch>
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules 1 NVL">
-		<changes>
+			<change operation="unselect" />
+				
 			<change operation="append" property="DefaultCostMatrix" type="map">
 				<map>
 					<key type="Int32">12</key>
@@ -289,8 +268,10 @@
 				<change operation="add" type="Int32">0</change>
 				<change operation="add" type="Int32">0</change>
 				<change operation="add" type="Int32">0</change>
+			<change operation="unselect" />
 		</changes>
 	</ndfpatch>
+
 
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="Deck Rules Country to Coalition Map FINPOL">
 		<changes>
