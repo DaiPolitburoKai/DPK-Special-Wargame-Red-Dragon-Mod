@@ -1,0 +1,10 @@
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="TEST ">
+		<matchconditions>
+			<matchcondition>110904</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">45</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

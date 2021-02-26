@@ -893,7 +893,7 @@
 	
 	<!--Coalition-->
 	
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules SCAND Create" />
+<!-- 	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules SCAND Create" />
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules SCAND">
 		<matchconditions>
 			<matchcondition type="property" property="__order">last</matchcondition>
@@ -969,7 +969,7 @@
 				</map>
 			</change>
 		</changes>
-	</ndfpatch>
+	</ndfpatch> -->
 	
 	
 </wargamepatch>
