@@ -75,35 +75,59 @@ ALL		Deck Rules				Support +1 Slots Available to Support, Logistics
 ALL		Deck Rules				1985: +2 Activation Points (7 Total), +30% Availability for Logistics, +1XP to Vehicle and Support
 ALL		Deck Rules				1980: +5 Activation Points (15 Total), +30% Availability for Vehicle and Support, +80% Availability for Logistics, +1XP to Vehicle, Support, Plane, Helo, Tank
 
-SCAND	Deck Rules				+5% Availability of Logistics, Infantry, Recon, Vehicle, Tank, Helo, Plane
+SCAND	Deck Rules				+5% Availability of Logistics, Recon, Vehicle, Tank, Helo, +2 Activation Points
 NLGR	Deck Rules				Rerolled as what fucking Eurocorp should be (NL, RFA, FR, UK)
+LAND	Deck Rules				Adding NL, +5 Activation Points
+LAND	Deck Rules 				+10% Availability of Logistics, Infantry, Recon, Helo, Plane
 EURO	Deck Rules				Added UK (NLGR for those without DLC)
 NORAD	Deck Rules				+1 Logistics
 NORAD	Deck Rules				-1 Logistics Activation Cost
-NORAD	Deck Rules				+10% Availability of Logistics, Recon, Infantry, Helo, Plane 
+NORAD	Deck Rules				+10% Availability of Logistics, Recon, Helo, Plane 
+NORAD	Deck Rules				+2 Activation Points
 CMW		Deck Rules				+5 Activation Points
-CMW		Deck Rules				+10% Availability of Support
-CMW		Deck Rules				+20% Availability of Plane, Helo, Recon
+CMW		Deck Rules				+10% Availability of Log, Inf, Tnk, Support, Vehicle
+CMW		Deck Rules				+15% Availability of Plane, Helo, Recon, Naval
+BLUDRG	Deck Rules				+5 Activation Points
+REDDRG	Deck Rules				+5 Activation Points
+REDDRG	Deck Rules				+10% to Infantry Availability, +1 Infantry Slots
+YUGVAK	Deck Rules				+5 Activation Points, +50% Support Availability, +10% Availability Overall, +1 Slots for Support
+NSWP	Deck Rules				+5 Activation Points, +30% Support Availability, +10% Availability Overall
 
-TCH		Deck Rules				+1 Support, +30% Support Availability, +1 Support XP
 US		Deck Rules				+1 Logistics
-US		Deck Rules				+5% Availability of Logistics
-FR		Deck Rules				+20% Availability of Support, Plane (Total 40%)
-JAP		Deck Rules				-1 Recon Activation Cost
-JAP		Deck Rules				+1 Recon XP
-JAP		Deck Rules				+30% to Support, Recon (Total 60%)
+US		Deck Rules				+10% Availability of Logistics
+FR		Deck Rules				+15% Availability of Support, Plane (Total 40%), +1 slots to Helo, Plane
+RFA		Deck Rules				+10% Availability of Vehicle, Tank, -1 Vehicle Cost
+UK		Deck Rules				+1 XP to Plane, Helo, +10% Vehicle, Tank, Plane, Availability
+HOL		Deck Rules				-1 Helo, Vehicle Activation Cost, 40% to Helo, 30% to Plane, 15% Availability Default
 
+JAP		Deck Rules				-1 Recon Activation Cost
+JAP		Deck Rules				+1 Recon XP, Slots
+JAP		Deck Rules				+40% to Recon (Total 70%)
+JAP		Deck Rules				+15% to Support (Total 45%)
+ROK		Deck Rules				+1 Slots for Infantry
+ROK		Deck Rules				+15% Availability to Infantry (Total 50%)
+
+CAN		Deck Rules				45% Overall Availability, +1 Activation Points
+DAN		Deck Rules				45% Overall Availability, +1 Activation Points
+NOR		Deck Rules				45% Overall Availability, +1 Activation Points
+ANZ		Deck Rules				38% Overall Availability, +1 Activation Points
+
+YUG		Deck Rules				25% Overall Availability
+TCH		Deck Rules				+1 Slots for Support, +60% Support Availability, +1 Support XP, 20% Vehicle Availability
+RDA		Deck Rules				40% to Infantry Availability, 25% Overall Availability
+CHI		Deck Rules				+15% to Infantry Availability, +2 Infantry Slots
+NK		Deck Rules				+25% to Infantry Availability, +1 Infantry Slots
+POL		Deck Rules				+20% to Tanks, +20% to Support
 
 Zeds (FIN/YUG)
-FINPOL	Deck Rules				Activation Points: 45
+FINPOL	Deck Rules				Activation Points: 20
 FINPOL	Deck Rules				+45% Availability
 FINPOL	Deck Rules				Add URSS to Coalition
 FINPOL	Deck Rules				+4 Activation Slots to Infantry, Tank, Vehicle, Plane, Helo
 FINPOL	Deck Rules				+2 Activation Slots to Recon, Logistics, Support, Naval
-FINPOL	Deck Rules				+2 XP to Plane, Helo
-FINPOL	Deck Rules				+1 XP to Tank, Support
-FIN		Deck Rules				Activation Points: 45
+FIN		Deck Rules				Activation Points: 30
 FIN		Deck Rules				+85% Availability
+FIN		Deck Rules				+1 XP, -1 Activation Cost to Log
 FIN		Deck Rules				+4 Activation Slots to Infantry, Tank, Vehicle, Plane, Helo
 FIN		Deck Rules				+2 Activation Slots to Recon, Logistics, Support, Naval
 
@@ -116,14 +140,12 @@ FIN		T-55M MATTI				Price 50->42
 FIN		T-55M MATTI				Max Cards 2->9
 FIN		Sturmi (STuG)			Price 10->8
 FIN		Sturmi (STuG)			Max Cards 2->9
-
 FIN		Sturmi (STuG)			Fuel/Autonomy 1100L/600km
+FIN		BTR-50					Fuel/Autonomy 1100L/600km
 FIN		ITPSV Marksmen			Availability 0/15/11/7/0 (from 0/6/4/0/0)
 FIN		ITPSV Marksmen			Price 60->35
-
-FIN		ITPSV Marksmen			Max Cards 1->5
-
-FIN		MI-8T					Price32
+FIN		ITPSV Marksmen			Max Cards 1->5 
+FIN		MI-8T					Price 32
 FIN		MI-8T					Max Cards 1->7	
 FIN		MI-8T KT				Price 50->45
 FIN		MI-8T KT				Max Cards 1->7	

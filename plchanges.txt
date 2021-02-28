@@ -15,14 +15,6 @@ TCH		T815					Cost 40->30
 TCH		T815					Max Packs 2->4
 TCH		Granatomet AGS-17		12 man squad? (AGS-17 Ammo to 360, Double Vz. 58 RoF, Add GPMG)
 TCH		Granatomet AGS-17		Availability
-TCH		FOB						Max Cards 3 (Exception of a latter rule)
-TCH		FOB						Availability 2
-TCH		T-72S					Adding a Coaxial GPMG
-TCH		T-72M2 Moderna			Adding a Coaxial GPMG
-TCH		T-72M1cz				Adding a Coaxial GPMG
-TCH		T-72M1M					Adding a Coaxial GPMG
-TCH		T-55AM2 Dyna-1			Adding a Coaxial GPMG
-TCH		T-55AMB 				Adding a Coaxial GPMG
 
 RDA		T815					Supply 2400->2750
 RDA		T815					Cost 40->30
@@ -40,13 +32,13 @@ POL		T-72S					Price 125->115
 POL		T-72M2 WILK				Price 120->110
 POL		PT-91 Twardy			Price 155->144
 
-DEN		LLRkt HAMLET			Price 10->7
-DEN		M/151A1 KV				Price 100->95
-DEN		SKH M/109A3				Price 100->92
-DEN		Starfighter				Price 80->72
-DEN		F-100D					Price 65->56
-DEN		Ildstottegruppe			Price 10->8
-DEN		Ildstottegruppe'90		Price 15->12
+DAN		LLRkt HAMLET			Price 10->7
+DAN		M/151A1 KV				Price 100->95
+DAN		SKH M/109A3				Price 100->92
+DAN		Starfighter				Price 80->72
+DAN		F-100D					Price 65->56
+DAN		Ildstottegruppe			Price 10->8
+DAN		Ildstottegruppe'90		Price 15->12
 
 SWE		IKV 103					Price 10->8
 SWE		BKAN 1A					Price 120->110
@@ -56,7 +48,7 @@ NOR		Rover KPV				Price 110->100
 NOR		Stormer					Price 20->18
 NOR		NASAMS					Price 85->82
 NOR		AS.350					Price 55->48
-NOR		M8 Panserbil			Price 15->14
+NOR		M8 Panserbil			Price 15->12
 NOR		F-5A PUFF				Price 80->78
 
 CAN		Blowpipe				Price 5->4
@@ -107,7 +99,6 @@ FR		AMX-30 Roland 3			Available to Motorized Decks
 FR		AMX AuF1				Price 110->80
 FR		Leclerc					Max Cards 1->2
 FR		Leclerc					Price 165->155
-FR		Leclerc					Adding a Coaxial GPMG
 FR		AMX-32					Max Cards 1->2
 FR		AMX-30B2 BRENNUS		Price 65->62
 FR		Crotale					Price 65->60
@@ -130,7 +121,7 @@ JAP		OH-1 Ninja 				PorteeVisionTBA 364000->432000
 JAP		OH-1 Ninja				OpticalStrengthAntiRadar null->450
 JAP		OH-1 Ninja				Type 91 Ammo: 6
 JAP		Type 91					(OH-1 Ninja, PSAM, Kin-Sam) Range Aircraft: 1960->2275m
-JAP		Type 91					(OH-1 Ninja, PSAM, Kin-Sam) Range Helo: 2450->2626m
+JAP		Type 91					(OH-1 Ninja, PSAM, Kin-Sam) Range Helo: 2450->2625m
 JAP		Chu-MAT					(Chu-MAT, Mitsubishi Chu-MAT) Range: 2450->2625m, +40% Missile Speed
 JAP		Type 96 WAPC			Adding a fucking GPMG or HMG
 JAP		Type 89 IFV				Adding a Coaxial GPMG
@@ -144,7 +135,6 @@ JAP		F-86F Kyokko			Max Cards 1->2
 JAP		F-86F Kyokko			ECM: 0->5%
 JAP		CHUGATA CARGO			Price 10->7
 JAP		Type 90					Price 170->160
-JAP		Type 90					Adding a Coaxial GPMG
 
 ROK		K1						Max Cards 2->3
 ROK		K1						Price 90->80
@@ -162,11 +152,10 @@ ROK		KF-16C Block 52D		Price 160->150
 ROK		F-86F Sabre				Price 65->58
 ROK		F-D Peace Pheasant I 	Price 120->100
 
-HOL		M109A5 NL				Available to Mechanized, Motorized Decks
+HOL		M109A5 NL				Available to Mechanized Decks
 HOL		M727 I-HAWK HEOS		Price 75->65
 HOL		Leopard 2A1 			Price 100->95 (GPMG is inferior to German GPMG)
 HOL		CHEETAH PRTL A1			Added Stabilizer (35%)
-HOL		AH-64 Escort			M151 Hydra Ammo: +50%
 HOL		YPR-765 PRAT			Price 60->55
 HOL		YPR-765-25				Price 15->12
 HOL		NF-5A					Price 90->80
@@ -209,7 +198,6 @@ US		HEMTT					Max Packs 2->4
 US		AH-1W Supercobra		ECM 0->15%
 US		AH-64D Longbow			ECM 0->10%
 US		SH-60B Sea Hawk			ECM 0->10%
-US		FOB						Price 75->40 (Exception of a latter rule)
 
 SOV		Mi-26					Supply 6000->8000 (8k)
 SOV		2K22 Tunguska			Price 85->75

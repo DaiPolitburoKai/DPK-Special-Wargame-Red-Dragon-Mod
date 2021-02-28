@@ -292,6 +292,12 @@
 				<change operation="append" type="TableString">UK</change>
 		</changes>
 	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="Deck Rules Country to Coalition Map EURO">
+		<changes>
+			<change operation="select" property="MapCoalitionToCountry" key="LAND" />
+				<change operation="append" type="TableString">HOL</change>
+		</changes>
+	</ndfpatch>
 	
 	<!--Specializations-->
 		
@@ -891,17 +897,537 @@
 		</changes>
 	</ndfpatch>
 	
-	<!--Coalition-->
+	<!--Coalition/Nation-->
 	
-<!-- 	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules SCAND Create" />
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Deck Rules SCAND">
+	<!--Indexing-->
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances US">
 		<matchconditions>
-			<matchcondition type="property" property="__order">last</matchcondition>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
 		</matchconditions>
 		<changes>
-			<change operation="set" property="ActivationPoints" type="Int32">14</change>
+			<change operation="set" property="ActivationPoints" type="Int32">100</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances UK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">99</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances FR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">98</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances RFA">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">97</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances CAN">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">96</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances DAN">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">95</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances SWE">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">94</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances NOR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">93</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances ANZ">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">92</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances JAP">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">91</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances ROK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">90</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances HOL">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">89</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances ISR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">88</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances FIN">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">87</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances YUG">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">86</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances RDA">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">85</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances URSS">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">84</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances POL">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">83</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances TCH">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">82</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances CHI">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">81</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances NK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">15</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">80</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances EURO">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">79</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances SCAND">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">78</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances CMW">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">77</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances BLUDRG">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">76</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances LAND">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">75</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances NLGR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">74</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances FINPOL">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">73</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances YUGVAK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">72</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances NORAD">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">71</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances NSWP">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">70</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Index Instances REDDRG">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">69</change>
+		</changes>
+	</ndfpatch>
+	
+	<!--Modifying-->
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify US">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">100</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
 			
-			<change operation="set" property="Availability" type="maplist"/>
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify JAP">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">91</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">70</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="ExperienceBonus" type="maplist"/>
+			<change property="ExperienceBonus" operation="clear" />
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="ActivationCost" type="maplist"/>
+			<change property="ActivationCost" operation="clear" />
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify ROK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">90</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">50</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify FR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">98</matchcondition>
+		</matchconditions>
+		<changes>
 			<change property="Availability" operation="clear" />
 			<change operation="add" property="Availability" type="map">
 				<map>
@@ -913,6 +1439,1103 @@
 				<map>
 					<key type="Int32">6</key>
 					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify HOL">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">88</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="ActivationCost" type="maplist"/>
+			<change property="ActivationCost" operation="clear" />
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify RFA">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">97</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="ActivationCost" type="maplist"/>
+			<change property="ActivationCost" operation="clear" />
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify UK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">99</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="ExperienceBonus" type="maplist"/>
+			<change property="ExperienceBonus" operation="clear" />
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify CAN">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">96</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify DAN">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">95</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify NOR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">93</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify ANZ">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">92</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify TCH">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">82</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">90</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">50</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="ExperienceBonus" type="maplist"/>
+			<change property="ExperienceBonus" operation="clear" />
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify RDA">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">85</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify CHI">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">81</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">45</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify NK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">80</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">65</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify POL">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">83</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">40</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify YUG">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">86</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">25</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify FIN">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">87</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">105</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">105</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">105</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">105</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">105</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">105</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">105</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">105</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">105</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="ExperienceBonus" type="maplist"/>
+			<change property="ExperienceBonus" operation="clear" />
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="ActivationCost" type="maplist"/>
+			<change property="ActivationCost" operation="clear" />
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify SCAND">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">78</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">15</value>
 				</map>
 			</change>
 			<change operation="add" property="Availability" type="map">
@@ -948,28 +2571,804 @@
 			<change operation="add" property="Availability" type="map">
 				<map>
 					<key type="Int32">7</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify CMW">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">77</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify LAND">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">75</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">15</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify NORAD">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">71</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+
+			<change operation="set" property="ActivationCost" type="maplist"/>
+			<change property="ActivationCost" operation="clear" />
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify NSWP">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">70</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify YUGVAK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">72</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">50</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">0</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify YUGVAK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">72</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
 					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">30</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">20</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">10</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Modify FINPOL">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">73</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="Availability" operation="clear" />
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">55</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">55</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">55</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">55</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">55</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">55</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">55</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">55</value>
+				</map>
+			</change>
+			<change operation="add" property="Availability" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">55</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="SlotsAvailable" type="maplist"/>
+			<change property="SlotsAvailable" operation="clear" />
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">13</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">10</key>
+					<value type="Int32">2</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">8</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">11</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">7</key>
+					<value type="Int32">4</value>
+				</map>
+			</change>
+			<change operation="add" property="SlotsAvailable" type="map">
+				<map>
+					<key type="Int32">12</key>
+					<value type="Int32">2</value>
 				</map>
 			</change>
 		</changes>
 	</ndfpatch>
 	
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="Deck Rules SCAND Set">
+	<!--Reseting the Index-->
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index US">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">100</matchcondition>
+		</matchconditions>
 		<changes>
-			<change operation="set" property="ModifiersForCoalition" key="SCAND" type="map">
-				<map>
-					<key type="TableString">SCAND</key>
-					<value type="ObjectReference">
-						<reference table="TDeckRulesModifier">
-							<matchconditions>
-								<matchcondition type="property" property="__createdby">Deck Rules SCAND Create</matchcondition>
-							</matchconditions>
-						</reference>
-					</value>
-				</map>
-			</change>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
 		</changes>
-	</ndfpatch> -->
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index UK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">99</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index FR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">98</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index RFA">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">97</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index CAN">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">96</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">16</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index DAN">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">95</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">16</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index SWE">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">94</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index NOR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">93</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">16</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index ANZ">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">92</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">16</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index JAP">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">91</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index ROK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">90</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index ISR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">89</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index HOL">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">88</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index FIN">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">87</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">30</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index YUG">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">86</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index RDA">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">85</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index URSS">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">84</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index POL">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">83</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index TCH">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">82</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index CHI">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">81</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index NK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">80</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index EURO">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">79</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">10</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index SCAND">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">78</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">12</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index CMW">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">77</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index BLUDRG">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">76</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index LAND">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">75</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index NLGR">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">74</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">10</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index FINPOL">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">73</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">20</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index YUGVAK">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">72</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index NORAD">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">71</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">12</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index NSWP">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">70</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index REDDRG">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">69</matchcondition>
+		</matchconditions>
+		<changes>
+				<change operation="set" property="ActivationPoints" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	
 	
 	
 </wargamepatch>
