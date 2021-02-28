@@ -1,7 +1,7 @@
 TCH		Dana					Price 90-80
-TCH		Dana					Availability
+TCH		Dana					Availability 0/6/0/4/0
 TCH		Ondava					Max Packs 1->2
-TCH		Ondava					Availability
+TCH		Ondava					Availability 0/4/0/3/0
 TCH		2S7 Pivonka				Price 100->90
 TCH		STROP 2					Price 60->50
 TCH		STROP 2					Igla Ammo: x2 (NbTirSalve)
