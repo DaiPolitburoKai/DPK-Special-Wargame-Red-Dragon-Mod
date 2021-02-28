@@ -108,6 +108,16 @@ FR		Tigre HAP				Price 100->94
 FR		Tigre HAD				ECM 0->20%
 FR		Gazekke 341F Celtic		Price 65->58
 
+RFA		FRR Roland 3			Added to Mechanized Decks
+RFA		FRR Roland 3			Price 65->60
+RFA		Marder 1A1				Price 20->18
+RFA		Marder 1A3				Price 25->24
+RFA		Marder 2				Price 30->28
+RFA		KAnonenJagdPanzer		Price 20->18
+RFA		FUCHS Fufu				Price 120->115
+RFA		Alpha Jet A				ECM 0->5%
+RFA		PAH-2 TIGER				ECM 0->15%
+
 JAP		Kim Sam Closed Arrow	Available to Mechanized Decks	
 JAP		Tan-Sam Short Arrow		Available to Mechanized Decks
 JAP		Tan-Sam Short Arrow		Aircraft Range: 2626->3150
@@ -162,16 +172,6 @@ HOL		NF-5A					Price 90->80
 HOL		NF-5A					ECM 10->15%
 HOL		NF-5B					Price 90->80
 HOL		NF-5B					ECM 10->15%
-
-RFA		FRR Roland 3			Added to Mechanized Decks
-RFA		FRR Roland 3			Price 65->60
-RFA		Marder 1A1				Price 20->18
-RFA		Marder 1A3				Price 25->24
-RFA		Marder 2				Price 30->28
-RFA		KAnonenJagdPanzer		Price 20->18
-RFA		FUCHS Fufu				Price 120->115
-RFA		Alpha Jet A				ECM 0->5%
-RFA		PAH-2 TIGER				ECM 0->15%
 
 US		HEMTT					Availability 0/8/0/0/0
 US		M35 CARGO				Price 15->10
