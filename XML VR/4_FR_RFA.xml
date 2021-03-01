@@ -30,16 +30,16 @@
 			<change property="MaxDeployableAmount" operation="clear" />
             <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
             <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
-            <change property="MaxDeployableAmount" type="Int32" operation="append">18</change>
-            <change property="MaxDeployableAmount" type="Int32" operation="append">13</change>
-            <change property="MaxDeployableAmount" type="Int32" operation="append">8</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">19</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">14</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">9</change>
 		</changes>
 	</ndfpatch>
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="AMX 30 Brennus">
 		<matchconditions>
 			<matchcondition type="property" property="MotherCountry">FR</matchcondition>
 			<matchcondition type="property" property="Factory">9</matchcondition>
-			<matchcondition type="property" property="ClassNameForDebug">Unit_AMX30Brennus</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_AMX_30Brennus</matchcondition>
 		</matchconditions>
 		<changes>
 			<change operation="set" property="ProductionPrice" key="0" type="Int32">62</change>
@@ -61,7 +61,100 @@
             <change property="MaxDeployableAmount" type="Int32" operation="append">3</change>
 		</changes>
 	</ndfpatch>
-	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="Crotale">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FR</matchcondition>
+			<matchcondition type="property" property="Factory">13</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_Crotale_FR</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">60</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="AMX 32">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FR</matchcondition>
+			<matchcondition type="property" property="Factory">9</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_AMX_32</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">2</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">11</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">8</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="Tigre HAP">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FR</matchcondition>
+			<matchcondition type="property" property="Factory">11</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_Tigre_HAP_FR</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">94</change>
+			<change operation="set" property="HitRollECMModifier" key="0" type="Float32">-0.2</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">4</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">3</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="Tigre HAD">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FR</matchcondition>
+			<matchcondition type="property" property="Factory">11</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_Tigre_HAD_FR</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitRollECMModifier" key="0" type="Float32">-0.2</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">4</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">3</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="Gazelle 341F Celtic">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FR</matchcondition>
+			<matchcondition type="property" property="Factory">11</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_SA_341F_Gazelle_Celtic</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitRollECMModifier" key="0" type="Float32">-0.05</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">58</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">4</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">3</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="AMX-10P">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">FR</matchcondition>
+			<matchcondition type="property" property="Factory">8</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_AMX_10_P</matchcondition>
+			<matchcondition type="property" property="AliasName">AMX-10P</matchcondition>
+			<matchcondition type="property" property="PositionInMenu">5</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">12</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">32</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">28</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">24</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">16</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">12</change>
+		</changes>
+	</ndfpatch>
 	<!--Allamande-->
 	
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="Marder 1A1">

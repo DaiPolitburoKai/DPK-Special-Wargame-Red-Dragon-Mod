@@ -292,7 +292,7 @@
 				<change operation="append" type="TableString">UK</change>
 		</changes>
 	</ndfpatch>
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="Deck Rules Country to Coalition Map EURO">
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="Deck Rules Country to Coalition Map LAND">
 		<changes>
 			<change operation="select" property="MapCoalitionToCountry" key="LAND" />
 				<change operation="append" type="TableString">HOL</change>
@@ -2508,12 +2508,36 @@
 					<value type="Int32">1</value>
 				</map>
 			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
+			<change operation="add" property="ExperienceBonus" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">1</value>
+				</map>
+			</change>
 			
 			<change operation="set" property="ActivationCost" type="maplist"/>
 			<change property="ActivationCost" operation="clear" />
 			<change operation="add" property="ActivationCost" type="map">
 				<map>
 					<key type="Int32">3</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">9</key>
 					<value type="Int32">-1</value>
 				</map>
 			</change>
@@ -3107,6 +3131,27 @@
 					<value type="Int32">2</value>
 				</map>
 			</change>
+			
+			<change operation="set" property="ActivationCost" type="maplist"/>
+			<change property="ActivationCost" operation="clear" />
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">3</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
+			<change operation="add" property="ActivationCost" type="map">
+				<map>
+					<key type="Int32">9</key>
+					<value type="Int32">-1</value>
+				</map>
+			</change>
 		</changes>
 	</ndfpatch>
 	
@@ -3221,7 +3266,7 @@
 			<matchcondition type="property" property="ActivationPoints">87</matchcondition>
 		</matchconditions>
 		<changes>
-				<change operation="set" property="ActivationPoints" type="Int32">30</change>
+				<change operation="set" property="ActivationPoints" type="Int32">35</change>
 		</changes>
 	</ndfpatch>
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index YUG">
@@ -3333,7 +3378,7 @@
 			<matchcondition type="property" property="ActivationPoints">73</matchcondition>
 		</matchconditions>
 		<changes>
-				<change operation="set" property="ActivationPoints" type="Int32">20</change>
+				<change operation="set" property="ActivationPoints" type="Int32">25</change>
 		</changes>
 	</ndfpatch>
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="Reset Index YUGVAK">

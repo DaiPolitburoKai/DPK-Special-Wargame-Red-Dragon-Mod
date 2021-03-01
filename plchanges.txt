@@ -103,10 +103,14 @@ FR		AMX-32					Max Cards 1->2
 FR		AMX-30B2 BRENNUS		Price 65->62
 FR		Crotale					Price 65->60
 FR		AMX-10 RC SB			Price 40->36
+FR		AMX-10 RC SB			Availability 0/0/19/14/9
 FR		Tigre HAP				ECM 0->20%
 FR		Tigre HAP				Price 100->94
+FR		Tigre HAP				Availability 0/4/3/0/0
 FR		Tigre HAD				ECM 0->20%
-FR		Gazekke 341F Celtic		Price 65->58
+FR		Tigre HAD				Availability 0/4/3/0/0
+FR		Gazelle 341F Celtic		Price 70->58
+FR		Gazelle 341F Celtic		ECM 0->5%
 
 RFA		FRR Roland 3			Added to Mechanized Decks
 RFA		FRR Roland 3			Price 65->60

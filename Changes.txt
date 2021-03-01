@@ -120,14 +120,16 @@ NK		Deck Rules				+25% to Infantry Availability, +1 Infantry Slots
 POL		Deck Rules				+20% to Tanks, +20% to Support
 
 Zeds (FIN/YUG)
-FINPOL	Deck Rules				Activation Points: 20
+FINPOL	Deck Rules				Activation Points: 25
 FINPOL	Deck Rules				+45% Availability
 FINPOL	Deck Rules				Add URSS to Coalition
 FINPOL	Deck Rules				+4 Activation Slots to Infantry, Tank, Vehicle, Plane, Helo
 FINPOL	Deck Rules				+2 Activation Slots to Recon, Logistics, Support, Naval
-FIN		Deck Rules				Activation Points: 30
+FINPOL	Deck Rules				-1 Activation Cost to Log, Tank, Inf
+FIN		Deck Rules				-1 Activation Cost to Log, Tank, Inf
+FIN		Deck Rules				Activation Points: 35
 FIN		Deck Rules				+85% Availability
-FIN		Deck Rules				+1 XP, -1 Activation Cost to Log
+FIN		Deck Rules				+1 XP to Log, Inf, Tank
 FIN		Deck Rules				+4 Activation Slots to Infantry, Tank, Vehicle, Plane, Helo
 FIN		Deck Rules				+2 Activation Slots to Recon, Logistics, Support, Naval
 
