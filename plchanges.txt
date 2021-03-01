@@ -111,6 +111,8 @@ FR		Tigre HAD				ECM 0->20%
 FR		Tigre HAD				Availability 0/4/3/0/0
 FR		Gazelle 341F Celtic		Price 70->58
 FR		Gazelle 341F Celtic		ECM 0->5%
+FR		VPM 120					Availability 0/4/3/0/0
+FR		Caeser					Availability 0/5/4/0/0
 
 RFA		FRR Roland 3			Added to Mechanized Decks
 RFA		FRR Roland 3			Price 65->60

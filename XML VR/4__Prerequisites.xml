@@ -9,6 +9,4 @@
 			<change operation="set" property="SupplyCapacity" type="Float32">2750</change>
 		</changes>
 	</ndfpatch>
-	
-	
 </wargamepatch>

@@ -44,7 +44,36 @@
             <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
 		</changes>
 	</ndfpatch>
-	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TAmmunition" name="Ondava Aim Time" >
+		<matchconditions>
+			<matchcondition type="property" property="TypeArme">B7FAE72E4F4B0000</matchcondition>
+			<matchcondition type="property" property="TypeName">0B06000000000000</matchcondition>
+			<matchcondition type="property" property="DescriptorId">00000000-0001-0000-0600-00000b040000</matchcondition>
+			<matchcondition type="property" property="Name">0822556D07000000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="TempsDeVisee" type="Float32">2</change>
+			<change operation="set" property="SupplyCost" type="UInt32">100</change>
+			<change operation="set" property="TempsEntreDeuxTirs" type="Float32">5</change>
+			<change operation="set" property="TempsEntreDeuxFx" type="Float32">5</change>
+			<change operation="set" property="FX_vitesse_de_depart" type="Float32">65000</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TAmmunition" name="Ondava Aim Time" >
+		<matchconditions>
+			<matchcondition type="property" property="TypeArme">B7FAE72E4F4B0000</matchcondition>
+			<matchcondition type="property" property="TypeName">0B06000000000000</matchcondition>
+			<matchcondition type="property" property="DescriptorId">00000000-0001-0000-0600-00000c040000</matchcondition>
+			<matchcondition type="property" property="Name">0822556D07000000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="TempsDeVisee" type="Float32">2</change>
+			<change operation="set" property="SupplyCost" type="UInt32">100</change>
+			<change operation="set" property="TempsEntreDeuxTirs" type="Float32">5</change>
+			<change operation="set" property="TempsEntreDeuxFx" type="Float32">5</change>
+			<change operation="set" property="FX_vitesse_de_depart" type="Float32">65000</change>
+		</changes>
+	</ndfpatch>
 	
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="815 ECON RDA">
 		<matchconditions>

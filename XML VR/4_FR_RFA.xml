@@ -155,6 +155,42 @@
             <change property="MaxDeployableAmount" type="Int32" operation="append">12</change>
 		</changes>
 	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TAmmunition" name="Crotale Fixed Wing Aircraft Range" >
+		<matchconditions>
+			<matchcondition type="property" property="TypeArme">D7D2010000000000</matchcondition>
+			<matchcondition type="property" property="TypeName">0B06000000000000</matchcondition>
+			<matchcondition type="property" property="DescriptorId">00000000-0000-0000-0600-000096090000</matchcondition>
+			<matchcondition type="property" property="Name">D7D2D17703000000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="PorteeMaximaleHA" type="Float32">280800</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TAmmunition" name="Caeser Aim Time" >
+		<matchconditions>
+			<matchcondition type="property" property="TypeArme">B7FAE72E4F4B0000</matchcondition>
+			<matchcondition type="property" property="TypeName">0B06000000000000</matchcondition>
+			<matchcondition type="property" property="DescriptorId">00000000-0000-0000-0600-000053060000</matchcondition>
+			<matchcondition type="property" property="Name">862174CFD2000000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="TempsDeVisee" type="Float32">2.5</change>
+			<change operation="set" property="SupplyCost" type="UInt32">350</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TAmmunition" name="Caeser Aim Time" >
+		<matchconditions>
+			<matchcondition type="property" property="TypeArme">B7FAE72E4F4B0000</matchcondition>
+			<matchcondition type="property" property="TypeName">0B06000000000000</matchcondition>
+			<matchcondition type="property" property="DescriptorId">00000000-0000-0000-0600-000052060000</matchcondition>
+			<matchcondition type="property" property="Name">862174CFD2000000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="TempsDeVisee" type="Float32">2.5</change>
+			<change operation="set" property="SupplyCost" type="UInt32">350</change>
+		</changes>
+	</ndfpatch>
+	
 	<!--Allamande-->
 	
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="Marder 1A1">
