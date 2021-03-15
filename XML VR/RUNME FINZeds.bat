@@ -12,16 +12,16 @@ REM Lastly set ModPatcherFolder to the folder containing the WGPatcher.exe file,
 REM or ModPatcherFolder=current if it is in the same folder as the batch file.
 REM====================================================================
 SET ModFile001=1_Deck_Rules.xml
-SET ModFile002=3_Fin.xml
-SET ModFile003=
-SET ModFile004=
-SET ModFile005=
-SET ModFile006=
-SET ModFile007=
-SET ModFile008=
-SET ModFile009=
-SET ModFile010=
-SET ModFile011=
+SET ModFile002=1_IncreasedIncome.xml
+SET ModFile003=1_MapPoints.xml
+SET ModFile004=2_FOBS.xml
+SET ModFile005=2_NVL_Supply.xml
+SET ModFile006=3_Fin.xml
+SET ModFile007=4__Prerequisites.xml
+SET ModFile008=4_FR_RFA.xml
+SET ModFile009=4_RDA_TCH.xml
+SET ModFile010=4_SOV.xml
+SET ModFile011=4_US.xml
 SET ModFile012=
 SET ModFile013=
 SET ModFile014=

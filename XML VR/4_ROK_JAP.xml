@@ -212,4 +212,123 @@
 		</changes>
 	</ndfpatch>
 	
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TScannerConfigurationDescriptor" name="JAP OH1 Ninja SCCD" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TScannerConfigurationDescriptor" name="JAP OH1 Ninja SCCD set" >
+		<matchconditions>
+			<matchcondition type="property" property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ControllerName" type="TableString">ScannerConfigurationController</change>
+			<change operation="set" property="DetectionTBA" type="Float32">488800</change>
+			<change operation="set" property="PorteeVision" type="Float32">338000</change>
+			<change operation="set" property="OpticalStrength" type="Float32">310</change>
+			<change operation="set" property="OpticalStrengthAltitude" type="Float32">260</change>
+			<change operation="set" property="PorteeVisionTBA" type="Float32">432000</change>
+			<change operation="set" property="SpecializedOpticalStrengths" type="maplist"/>
+			<change operation="add" property="SpecializedOpticalStrengths" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Float32">220</value>
+				</map>
+			</change>
+			<change operation="set" property="SpecializedDetections" type="maplist"/>
+			<change operation="add" property="SpecializedDetections" type="map">
+				<map>
+					<key type="Int32">4</key>
+					<value type="Float32">520000</value>
+				</map>
+			</change>
+			<change operation="add" property="SpecializedDetections" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Float32">1040000</value>
+				</map>
+			</change>
+			
+			<change operation="set" property="OpticalStrengthAntiradar" type="Float32">450</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="JAP OH1 Ninja SCCM" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="JAP OH1 Ninja SCCM set" >
+		<matchconditions>
+			<matchcondition type="property" property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ControllerName" type="TableString">ScannerConfigurationController</change>
+			<change operation="set" property="Selection" type="List"/>
+			<change operation="add" property="Selection" type="ObjectReference">
+				<reference table="TModuleSelectorFilter">
+					<matchconditions>
+						<matchcondition type="referencedby" table="TModuleSelector">
+							<matchconditions>
+								<matchcondition type="property" property="ControllerName">ScannerConfigurationController</matchcondition>
+							</matchconditions>
+						</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+			<change operation="set" property="Default">
+				<reference table="TScannerConfigurationDescriptor">
+					<matchconditions>
+						<matchcondition type="property" property="__createdby">JAP OH1 Ninja SCCD</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TWeaponManagerModuleDescriptor" name="JAP OH1 Ninja WMMD" >
+		<matchconditions>
+			<matchcondition type="property" property="ControllerName">WeaponManagerController</matchcondition>
+			<matchcondition type="property" property="_ShortDatabaseName">WeaponDescriptor_Unit_OH1_Ninja</matchcondition>
+		</matchconditions>
+		<changes>
+            <change operation="set" property="Salves" key="0" type="Int32">2</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TTypeUnitModuleDescriptor" name="JAP OH1 Ninja TUMD" >
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">JAP</matchcondition>
+			<matchcondition type="property" property="TypeUnitValue">32</matchcondition>
+			<matchcondition type="property" property="TypeUnitHintToken">6EACB659F3700000</matchcondition>
+			<matchcondition type="property" property="NameInMenuToken">E63BBB9820650000</matchcondition>
+			<matchcondition type="property" property="GenerateName">True</matchcondition>
+		</matchconditions>
+		<changes>
+            <change operation="select" property="Filters" key="3"/>
+				<change operation="add" type="LocalisationHash">23B8605ED9380000</change>
+				<change operation="add" type="LocalisationHash">8BD43C9757360E00</change>
+				<change operation="add" type="LocalisationHash">DAD77965E3000000</change>
+			<change operation="unselect" />
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="JAP OH1 Ninja">
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">JAP</matchcondition>
+			<matchcondition type="property" property="Factory">10</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_OH1_Ninja</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">85</change>
+			<change operation="set" property="Modules" key="ScannerConfiguration" type="ObjectReference">
+				<reference table="TModuleSelector">
+					<matchconditions>
+						<matchcondition type="property" property="__createdby">JAP OH1 Ninja SCCM</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">3</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">2</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+			<change property="UnitTypeTokens" type="LocalisationHash" operation="append">23B8605ED9380000</change>
+			<change property="UnitTypeTokens" type="LocalisationHash" operation="append">8BD43C9757360E00</change>
+			<change property="UnitTypeTokens" type="LocalisationHash" operation="append">DAD77965E3000000</change>
+		</changes>
+	</ndfpatch>
 </wargamepatch>

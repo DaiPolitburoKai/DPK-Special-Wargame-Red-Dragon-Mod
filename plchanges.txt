@@ -141,8 +141,6 @@ JAP		OH-1 Ninja				Type 91 Ammo: 8
 JAP		Type 91					(OH-1 Ninja, PSAM, Kin-Sam) Range Aircraft: 1960->2275m
 JAP		Type 91					(OH-1 Ninja, PSAM, Kin-Sam) Range Helo: 2450->2625m
 JAP		Chu-MAT					(Chu-MAT, Mitsubishi Chu-MAT) Range: 2450->2625m, +40% Missile Speed
-JAP		Type 96 WAPC			Adding a fucking GPMG or HMG?
-JAP		Type 89 IFV				Adding a Coaxial GPMG?
 JAP		F-1						Max Cards 1->2
 JAP		F-1						ECM 20->30%
 JAP		F-1						GCS M-117 Range: 3500->3850

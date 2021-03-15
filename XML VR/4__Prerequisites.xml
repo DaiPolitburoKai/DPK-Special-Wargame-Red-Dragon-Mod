@@ -10,7 +10,7 @@
 		</changes>
 	</ndfpatch>
 	
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteBehaviourDescriptor" name="JAP PSAMChuMAT GCBD" />
+	<!-- <ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteBehaviourDescriptor" name="JAP PSAMChuMAT GCBD" />
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteBehaviourDescriptor" name="JAP PSAMChuMAT GCBD set">
 		<matchconditions>
 			<matchcondition type="property" property="__order">last</matchcondition>
@@ -118,5 +118,5 @@
 				</reference>
 			</change>
 		</changes>
-	</ndfpatch>
+	</ndfpatch> -->
 </wargamepatch>
