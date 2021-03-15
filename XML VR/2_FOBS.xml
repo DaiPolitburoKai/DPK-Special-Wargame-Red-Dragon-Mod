@@ -9,7 +9,7 @@
 		</matchconditions>
 		<changes>
 			<change operation="set" property="MaxPacks" type="UInt32">4</change>
-			<change operation="set" property="ProductionPrice" key="0" type="Int32">50</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">48</change>
 		</changes>
 	</ndfpatch>
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleModernWarfareSupplyDescriptor" name="SUPPLIES FOB ">

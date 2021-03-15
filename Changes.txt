@@ -44,14 +44,16 @@ ALL		Deck Rules				Airborne -2 Slots for Tank
 ALL		Deck Rules				Airborne -1 Slots for Logistics, Support
 ALL		Deck Rules				Airborne +1 Activation Cost for Tank
 ALL		Deck Rules				Airborne +1 Activation Cost for Logistics
+ALL		Deck Rules				Airborne adds 2 Activation Points
 
-ALL		Deck Rules				Marine +1 Slots Available to Infantry, Vehicle
+ALL		Deck Rules				Marine +1 Slots Available to Infantry, Vehicle, Naval
 ALL		Deck Rules				Marine +1 XP to Plane (Total 2)
 ALL		Deck Rules				Marine +2 XP to Helo (Total 2)
 ALL		Deck Rules				Marine +2 XP to Naval (Total 2)
 ALL		Deck Rules				Marine -1 Activation Cost to Helo
 ALL		Deck Rules				Marine +20% Availability for Infantry
-ALL		Deck Rules				Marine +20% Availability for Naval
+ALL		Deck Rules				Marine +30% Availability for Naval
+ALL		Deck Rules				Airborne adds 2 Activation Points
 
 ALL		Deck Rules				Mechanized +30% Availability to Vehicle
 ALL		Deck Rules				Mechanized +10% Availability to Infantry

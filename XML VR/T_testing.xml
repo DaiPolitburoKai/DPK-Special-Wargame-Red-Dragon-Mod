@@ -1,186 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <wargamepatch>
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteBehaviourDescriptor" name="FIN Zeds Nostovaki GCBD" />
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteBehaviourDescriptor" name="FIN Zeds Nostovaki GCBD set">
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TAmmunition" name="JAP Type 91 Ammo" >
+		<matchconditions>
+			<matchcondition type="property" property="TypeArme">D7D2010000000000</matchcondition>
+			<matchcondition type="property" property="TypeName">0B06000000000000</matchcondition>
+			<matchcondition type="property" property="Name">D7D2098A07000000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="TempsDeVisee" type="Float32">0.25</change>
+			<change operation="set" property="SupplyCost" type="UInt32">20</change>
+			<change operation="set" property="FX_vitesse_de_depart" type="Float32">130000</change>
+			<change operation="set" property="PorteeMaximaleTBA" type="Float32">195000</change>
+			<change operation="set" property="PorteeMaximaleHA" type="Float32">169000</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TGroupeCombatModuleDescriptor" name="JAP OH1 Ninja SCCD" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TGroupeCombatModuleDescriptor" name="JAP OH1 Ninja SCCD set" >
 		<matchconditions>
 			<matchcondition type="property" property="__order">last</matchcondition>
 		</matchconditions>
 		<changes>
-			<change operation="set" property="NoiseMin" type="Float32">35</change>
-			<change operation="set" property="NoiseMax" type="Float32">45</change>
-			<change operation="set" property="NoiseTimeMin" type="Float32">2.5</change>
-			<change operation="set" property="NoiseTimeMax" type="Float32">5</change>
-			<change operation="set" property="DispersionMax" type="Float32">187.5</change>
-			<change operation="set" property="SoldatsDistanceMin" type="Float32">500</change>
-			<change operation="set" property="MargeAnimation" type="Float32">0.005</change>
-			<change operation="set" property="MinDistance" type="Float32">10</change>
-			<change operation="set" property="NbSoldatInGroupeCombat" type="Int32">8</change>
-			<change operation="set" property="CoeffRepositionement" type="Float32">0.005</change>
-			<change operation="set" property="UpTimeMax" type="Float32">12</change>
-			<change operation="set" property="UpTimeMin" type="Float32">6</change>
-			<change operation="set" property="UpProba" type="Float32">0.4</change>
-			<change operation="set" property="DeathOnExplosionDuration" type="Float32">0.5</change>
-			<change operation="set" property="ProbaTireDeplacement" type="Float32">0.1</change>
-			<change operation="set" property="NbBullet" type="Int32">7</change>
-			<change operation="set" property="ProbaViolentDeath" type="Float32">0.65</change>
-			<change operation="set" property="Dispersion" type="Float32">150</change>
-			<change operation="set" property="DeltaDistance" type="Float32">90</change>
-			<change operation="set" property="OnHitProbaNormalWeapon" type="Float32">0.06</change>
-			<change operation="set" property="OnHitProbaOtherWeapon" type="Float32">0.01</change>
-			<change operation="set" property="IdleLookProba" type="Float32">0.03</change>
-			<change operation="set" property="ProbaTirUp" type="Float32">0.7</change>
-			<change operation="set" property="ProbaTirDown" type="Float32">0.2</change>
-			<change operation="set" property="ViseMenaceTimeMin" type="Float32">1</change>
-			<change operation="set" property="ViseMenaceTimeMax" type="Float32">7</change>
-			<change operation="set" property="ProbaViseMenace" type="Float32">0.015</change>
-			<change operation="set" property="FiringUnitRatio" type="Float32">0.6</change>
-			<change operation="set" property="DecalageSeFire" type="Float32">0.25</change>
-			<change operation="set" property="TirEmptyFrames" type="Int32">4</change>
-			<change operation="set" property="GrenadeFXDelay" type="Float32">1.8</change>
-			<change operation="set" property="FallingSpeed" type="Float32">3000</change>
-			<change operation="set" property="DropingSpeed" type="Float32">9000</change>
-			<change operation="set" property="DropingDistance" type="Float32">10000</change>
-			<change operation="set" property="TimeToLeaveWorldAfterDroping" type="Float32">2</change>
-			<change operation="set" property="RegroupSpeed" type="Float32">400</change>
-			<change operation="set" property="FadeInTime" type="Float32">0.5</change>
-			<change operation="set" property="MarginApparitionDistance" type="Float32">26</change>
-			<change operation="set" property="FreeFallRatio" type="Float32">0.02</change>
-			<change operation="set" property="FreeFallSpeedRatio" type="Float32">4</change>
-			<change operation="set" property="NoiseMinOscillations" type="Float32">0.5</change>
-			<change operation="set" property="NoiseMaxOscillations" type="Float32">1.5</change>
-			<change operation="set" property="HorizontalNoiseAmplitude" type="Float32">2000</change>
-			<change operation="set" property="OrientationNoiseAmplitude" type="Float32">1.5</change>
-			<change operation="set" property="OnGroundWaitingTime" type="Float32">2</change>
+			<change operation="set" property="ControllerName" type="TableString">ScannerConfigurationController</change>
+			<change operation="set" property="DetectionTBA" type="Float32">488800</change>
+			<change operation="set" property="PorteeVision" type="Float32">338000</change>
+			<change operation="set" property="OpticalStrength" type="Float32">310</change>
+			<change operation="set" property="OpticalStrengthAltitude" type="Float32">260</change>
+			<change operation="set" property="PorteeVisionTBA" type="Float32">432000</change>
+			<change operation="set" property="SpecializedOpticalStrengths" type="maplist"/>
+			<change operation="add" property="SpecializedOpticalStrengths" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Float32">220</value>
+				</map>
+			</change>
+			<change operation="set" property="SpecializedDetections" type="maplist"/>
+			<change operation="add" property="SpecializedDetections" type="map">
+				<map>
+					<key type="Int32">4</key>
+					<value type="Float32">520000</value>
+				</map>
+			</change>
+			<change operation="add" property="SpecializedDetections" type="map">
+				<map>
+					<key type="Int32">6</key>
+					<value type="Float32">1040000</value>
+				</map>
+			</change>
 			
-			<change operation="set" property="AnimationFastAccessor">
-				<reference table="TUnite_Gdc_AnimationFastAccessor">
-					<matchconditions>
-						<matchcondition type="referencedby" table="TUniteBehaviourDescriptor">
-							<matchconditions>
-								<change operation="set" property="NoiseMin" type="Float32">35</change>
-								<change operation="set" property="NoiseMax" type="Float32">45</change>
-								<change operation="set" property="NoiseTimeMin" type="Float32">2.5</change>
-								<change operation="set" property="NoiseTimeMax" type="Float32">5</change>
-								<change operation="set" property="DispersionMax" type="Float32">187.5</change>
-								<change operation="set" property="SoldatsDistanceMin" type="Float32">500</change>
-								<change operation="set" property="MargeAnimation" type="Float32">0.005</change>
-								<change operation="set" property="MinDistance" type="Float32">10</change>
-								<change operation="set" property="NbSoldatInGroupeCombat" type="Int32">5</change>
-								<change operation="set" property="CoeffRepositionement" type="Float32">0.005</change>
-								<change operation="set" property="UpTimeMax" type="Float32">12</change>
-								<change operation="set" property="UpTimeMin" type="Float32">6</change>
-								<change operation="set" property="UpProba" type="Float32">0.4</change>
-								<change operation="set" property="DeathOnExplosionDuration" type="Float32">0.5</change>
-								<change operation="set" property="ProbaTireDeplacement" type="Float32">0.1</change>
-								<change operation="set" property="NbBullet" type="Int32">7</change>
-								<change operation="set" property="ProbaViolentDeath" type="Float32">0.65</change>
-								<change operation="set" property="Dispersion" type="Float32">150</change>
-								<change operation="set" property="DeltaDistance" type="Float32">90</change>
-								<change operation="set" property="OnHitProbaNormalWeapon" type="Float32">0.06</change>
-								<change operation="set" property="OnHitProbaOtherWeapon" type="Float32">0.01</change>
-								<change operation="set" property="IdleLookProba" type="Float32">0.03</change>
-								<change operation="set" property="ProbaTirUp" type="Float32">0.7</change>
-								<change operation="set" property="ProbaTirDown" type="Float32">0.2</change>
-								<change operation="set" property="ViseMenaceTimeMin" type="Float32">1</change>
-								<change operation="set" property="ViseMenaceTimeMax" type="Float32">7</change>
-								<change operation="set" property="ProbaViseMenace" type="Float32">0.015</change>
-								<change operation="set" property="FiringUnitRatio" type="Float32">0.6</change>
-								<change operation="set" property="DecalageSeFire" type="Float32">0.25</change>
-								<change operation="set" property="TirEmptyFrames" type="Int32">4</change>
-								<change operation="set" property="GrenadeFXDelay" type="Float32">1.8</change>
-								<change operation="set" property="FallingSpeed" type="Float32">3000</change>
-								<change operation="set" property="DroppingSpeed" type="Float32">9000</change>
-								<change operation="set" property="DroppingDistance" type="Float32">10000</change>
-								<change operation="set" property="TimeToLeaveWorldAfterDropping" type="Float32">2</change>
-								<change operation="set" property="RegroupSpeed" type="Float32">400</change>
-								<change operation="set" property="FadeInTime" type="Float32">0.5</change>
-								<change operation="set" property="MarginApparitionDistance" type="Float32">26</change>
-								<change operation="set" property="FreeFallRatio" type="Float32">0.02</change>
-								<change operation="set" property="FreeFallSpeedRatio" type="Float32">4</change>
-								<change operation="set" property="NoiseMinOscillations" type="Float32">0.5</change>
-								<change operation="set" property="NoiseMaxOscillations" type="Float32">1.5</change>
-								<change operation="set" property="HorizontalNoiseAmplitude" type="Float32">2000</change>
-								<change operation="set" property="OrientationNoiceAmplitude" type="Float32">1.5</change>
-								<change operation="set" property="OnGroundWaitingTime" type="Float32">2</change>
-							</matchconditions>
-						</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
+			<change operation="set" property="OpticalStrengthAntiradar" type="Float32">450</change>
 		</changes>
 	</ndfpatch>
 	
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TGroupeCombatModuleDescriptor" name="FIN Zeds Nostovaki GCMD" />
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TGroupeCombatModuleDescriptor" name="FIN Zeds Nostovaki GCMD set" >
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="JAP OH1 Ninja SCCM" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="JAP OH1 Ninja SCCM set" >
 		<matchconditions>
 			<matchcondition type="property" property="__order">last</matchcondition>
 		</matchconditions>
 		<changes>
-			<change operation="set" property="ControllerName" type="TableString">GroupeCombatController</change>
-			<change operation="set" property="BehaviourDescriptor">
-				<reference table="TUniteBehaviourDescriptor">
-					<matchconditions>
-						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki GCBD</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="GfxPorteur">
-				<reference table="TGfxDescriptorPorteur">
-					<matchconditions>
-						<matchcondition type="property" property="_ShortDatabaseName">GfxPorteurUniteTerrestreInfanterie</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="GfxPorteurGhost">
-				<reference table="TGfxDescriptorPorteur">
-					<matchconditions>
-						<matchcondition type="property" property="_ShortDatabaseName">GfxPorteurUniteTerrestreGhost</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="GfxWeaponModels">
-				<reference table="TWeaponModelHolder">
-					<matchconditions>
-						<matchcondition type="referencedby" table="TGroupeCombatModuleDescriptor">
-							<matchconditions>
-								<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
-								<matchcondition type="referencedby" table="TModuleSelector">
-									<matchconditions>
-										<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
-										<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
-											<matchconditions>
-												<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
-												<matchcondition type="property" property="Factory">6</matchcondition>
-												<matchcondition type="property" property="ClassNameForDebug">Unit_Nostovaki</matchcondition>
-											</matchconditions>
-										</matchcondition>
-									</matchconditions>
-								</matchcondition>
-							</matchconditions>
-						</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="PositionModule" type="TableString">Position</change>
-			<change operation="set" property="WeaponManagerModule" type="TableString">WeaponManager</change>
-			<change operation="set" property="CadavreModule" type="TableString">Cadavre</change>
-			<change operation="set" property="DamageModule" type="TableString">Damage</change>
-		</changes>
-	</ndfpatch>
-	
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki GCM" />
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki GCM set" >
-		<matchconditions>
-			<matchcondition type="property" property="__order">last</matchcondition>
-		</matchconditions>
-		<changes>
-			<change operation="set" property="ControllerName" type="TableString">GroupeCombatController</change>
+			<change operation="set" property="ControllerName" type="TableString">ScannerConfigurationController</change>
 			<change operation="set" property="Selection" type="List"/>
 			<change operation="add" property="Selection" type="ObjectReference">
 				<reference table="TModuleSelectorFilter">
 					<matchconditions>
 						<matchcondition type="referencedby" table="TModuleSelector">
 							<matchconditions>
-								<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
+								<matchcondition type="property" property="ControllerName">ScannerConfigurationController</matchcondition>
 							</matchconditions>
 						</matchcondition>
 					</matchconditions>
@@ -189,92 +74,62 @@
 			<change operation="set" property="Default">
 				<reference table="TGroupeCombatModuleDescriptor">
 					<matchconditions>
-						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki GCMD</matchcondition>
+						<matchcondition type="property" property="__createdby">JAP OH1 Ninja SCCD</matchcondition>
 					</matchconditions>
 				</reference>
 			</change>
 		</changes>
 	</ndfpatch>
 	
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="FIN Zeds Nostovaki HPD" />
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="FIN Zeds Nostovaki HPD set">
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TWeaponManagerModuleDescriptor" name="JAP OH1 Ninja WMMD" >
 		<matchconditions>
-			<matchcondition type="property" property="__order">last</matchcondition>
+			<matchcondition type="property" property="ControllerName">WeaponManagerController</matchcondition>
+			<matchcondition type="property" property="_ShortDatabaseName">WeaponDescriptor_Unit_OH1_Ninja</matchcondition>
 		</matchconditions>
 		<changes>
-			<change operation="set" property="ControllerName" type="TableString">DamageController</change>
-			<change operation="set" property="CommonDamageDescriptor">
-				<reference table="TModernWarfareCommonDamageDescriptor">
-					<matchconditions>
-						<matchcondition type="referencedby" table="TModernWarfareDamageModuleDescriptor">
-							<matchconditions>
-								<matchcondition type="property" property="ControllerName">DamageController</matchcondition>
-								<matchcondition type="property" property="MaxDamages">15</matchcondition>
-								<matchcondition type="property" property="MaxHPForHUD">15</matchcondition>
-							</matchconditions>
-						</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="MaxDamages" type="Float32">8</change>
-			<change operation="set" property="MaxHPForHUD" type="UInt32">8</change>
-			<change operation="set" property="Experience" type="TableString">Experience</change>
-			<change operation="set" property="AutoOrientation" type="Boolean">True</change>
+            <change operation="set" property="Salves" key="0" type="Int32">2</change>
 		</changes>
 	</ndfpatch>
 	
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki HPM" />
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki HPM set" >
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TTypeUnitModuleDescriptor" name="JAP OH1 Ninja TUMD" >
 		<matchconditions>
-			<matchcondition type="property" property="__order">last</matchcondition>
+			<matchcondition type="property" property="MotherCountry">JAP</matchcondition>
+			<matchcondition type="property" property="TypeUnitValue">32</matchcondition>
+			<matchcondition type="property" property="TypeUnitHintToken">6EACB659F3700000</matchcondition>
+			<matchcondition type="property" property="NameInMenuToken">E63BBB9820650000</matchcondition>
 		</matchconditions>
 		<changes>
-			<change operation="set" property="ControllerName" type="TableString">DamageController</change>
-			<change operation="set" property="Selection" type="List"/>
-			<change operation="add" property="Selection" type="ObjectReference">
-				<reference table="TModuleSelectorFilter">
-					<matchconditions>
-						<matchcondition type="referencedby" table="TModuleSelector">
-							<matchconditions>
-								<matchcondition type="property" property="ControllerName">DamageController</matchcondition>
-							</matchconditions>
-						</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="Default">
-				<reference table="TModernWarfareDamageModuleDescriptor">
-					<matchconditions>
-						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki HPD</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
+            <change operation="select" property="Filters" key="3"/>
+			<change operation="add" type="LocalisationHash">23B8605ED9380000</change>
+			<change operation="add" type="LocalisationHash">8BD43C9757360E00</change>
+			<change operation="add" type="LocalisationHash">DAD77965E3000000</change>
 		</changes>
 	</ndfpatch>
 	
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="FIN Zeds Nostovaki">
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="JAP OH1 Ninja">
 		<matchconditions>
-			<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
-			<matchcondition type="property" property="Factory">6</matchcondition>
-			<matchcondition type="property" property="ClassNameForDebug">Unit_Nostovaki</matchcondition>
+			<matchcondition type="property" property="MotherCountry">JAP</matchcondition>
+			<matchcondition type="property" property="Factory">10</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_OH1_Ninja</matchcondition>
 		</matchconditions>
 		<changes>
-			<change operation="set" property="MaxPacks" type="UInt32">9</change>
-			<change operation="set" property="ProductionPrice" key="0" type="Int32">8</change>
-			<change operation="set" property="Modules" key="Damage" type="ObjectReference">
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">85</change>
+			<change operation="set" property="Modules" key="ScannerCongifuration" type="ObjectReference">
 				<reference table="TModuleSelector">
 					<matchconditions>
-						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki HPM</matchcondition>
+						<matchcondition type="property" property="__createdby">JAP OH1 Ninja SCCM</matchcondition>
 					</matchconditions>
 				</reference>
 			</change>
-			<change operation="set" property="Modules" key="GroupeCombat" type="ObjectReference">
-				<reference table="TModuleSelector">
-					<matchconditions>
-						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki GCM</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">3</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">2</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+			<change property="UnitTypeToken" type="LocalisationHash" operation="append">23B8605ED9380000</change>
+			<change property="UnitTypeToken" type="LocalisationHash" operation="append">8BD43C9757360E00</change>
+			<change property="UnitTypeToken" type="LocalisationHash" operation="append">DAD77965E3000000</change>
 		</changes>
 	</ndfpatch>
 </wargamepatch>

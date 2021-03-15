@@ -6,7 +6,117 @@
 			<matchcondition type="property" property="SupplyCapacity">2400</matchcondition>
 		</matchconditions>
 		<changes>
-			<change operation="set" property="SupplyCapacity" type="Float32">2750</change>
+			<change operation="set" property="SupplyCapacity" type="Float32">2800</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteBehaviourDescriptor" name="JAP PSAMChuMAT GCBD" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteBehaviourDescriptor" name="JAP PSAMChuMAT GCBD set">
+		<matchconditions>
+			<matchcondition type="property" property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="NoiseMin" type="Float32">35</change>
+			<change operation="set" property="NoiseMax" type="Float32">45</change>
+			<change operation="set" property="NoiseTimeMin" type="Float32">2.5</change>
+			<change operation="set" property="NoiseTimeMax" type="Float32">5</change>
+			<change operation="set" property="DispersionMax" type="Float32">187.5</change>
+			<change operation="set" property="SoldatsDistanceMin" type="Float32">500</change>
+			<change operation="set" property="MargeAnimation" type="Float32">0.005</change>
+			<change operation="set" property="MinDistance" type="Float32">10</change>
+			<change operation="set" property="NbSoldatInGroupeCombat" type="Int32">6</change>
+			<change operation="set" property="CoeffRepositionement" type="Float32">0.005</change>
+			<change operation="set" property="UpTimeMax" type="Float32">12</change>
+			<change operation="set" property="UpTimeMin" type="Float32">6</change>
+			<change operation="set" property="UpProba" type="Float32">0.4</change>
+			<change operation="set" property="DeathOnExplosionDuration" type="Float32">0.5</change>
+			<change operation="set" property="ProbaTireDeplacement" type="Float32">0.1</change>
+			<change operation="set" property="NbBullet" type="Int32">7</change>
+			<change operation="set" property="ProbaViolentDeath" type="Float32">0.65</change>
+			<change operation="set" property="Dispersion" type="Float32">150</change>
+			<change operation="set" property="DeltaDistance" type="Float32">90</change>
+			<change operation="set" property="OnHitProbaNormalWeapon" type="Float32">0.06</change>
+			<change operation="set" property="OnHitProbaOtherWeapon" type="Float32">0.01</change>
+			<change operation="set" property="IdleLookProba" type="Float32">0.03</change>
+			<change operation="set" property="ProbaTirUp" type="Float32">0.7</change>
+			<change operation="set" property="ProbaTirDown" type="Float32">0.2</change>
+			<change operation="set" property="ViseMenaceTimeMin" type="Float32">1</change>
+			<change operation="set" property="ViseMenaceTimeMax" type="Float32">7</change>
+			<change operation="set" property="ProbaViseMenace" type="Float32">0.015</change>
+			<change operation="set" property="FiringUnitRatio" type="Float32">0.6</change>
+			<change operation="set" property="DecalageSeFire" type="Float32">0.25</change>
+			<change operation="set" property="TirEmptyFrames" type="Int32">4</change>
+			<change operation="set" property="GrenadeFXDelay" type="Float32">1.8</change>
+			<change operation="set" property="FallingSpeed" type="Float32">3000</change>
+			<change operation="set" property="DropingSpeed" type="Float32">9000</change>
+			<change operation="set" property="DropingDistance" type="Float32">10000</change>
+			<change operation="set" property="TimeToLeaveWorldAfterDroping" type="Float32">2</change>
+			<change operation="set" property="RegroupSpeed" type="Float32">400</change>
+			<change operation="set" property="FadeInTime" type="Float32">0.5</change>
+			<change operation="set" property="MarginApparitionDistance" type="Float32">26</change>
+			<change operation="set" property="FreeFallRatio" type="Float32">0.02</change>
+			<change operation="set" property="FreeFallSpeedRatio" type="Float32">4</change>
+			<change operation="set" property="NoiseMinOscillations" type="Float32">0.5</change>
+			<change operation="set" property="NoiseMaxOscillations" type="Float32">1.5</change>
+			<change operation="set" property="HorizontalNoiseAmplitude" type="Float32">2000</change>
+			<change operation="set" property="OrientationNoiseAmplitude" type="Float32">1.5</change>
+			<change operation="set" property="OnGroundWaitingTime" type="Float32">2</change>
+			
+			<change operation="set" property="AnimationFastAccessor">
+				<reference table="TUnite_Gdc_AnimationFastAccessor">
+					<matchconditions>
+						<matchcondition type="referencedby" table="TUniteBehaviourDescriptor">
+							<matchconditions>
+								<change operation="set" property="NoiseMin" type="Float32">35</change>
+								<change operation="set" property="NoiseMax" type="Float32">45</change>
+								<change operation="set" property="NoiseTimeMin" type="Float32">2.5</change>
+								<change operation="set" property="NoiseTimeMax" type="Float32">5</change>
+								<change operation="set" property="DispersionMax" type="Float32">187.5</change>
+								<change operation="set" property="SoldatsDistanceMin" type="Float32">500</change>
+								<change operation="set" property="MargeAnimation" type="Float32">0.005</change>
+								<change operation="set" property="MinDistance" type="Float32">10</change>
+								<change operation="set" property="NbSoldatInGroupeCombat" type="Int32">5</change>
+								<change operation="set" property="CoeffRepositionement" type="Float32">0.005</change>
+								<change operation="set" property="UpTimeMax" type="Float32">12</change>
+								<change operation="set" property="UpTimeMin" type="Float32">6</change>
+								<change operation="set" property="UpProba" type="Float32">0.4</change>
+								<change operation="set" property="DeathOnExplosionDuration" type="Float32">0.5</change>
+								<change operation="set" property="ProbaTireDeplacement" type="Float32">0.1</change>
+								<change operation="set" property="NbBullet" type="Int32">7</change>
+								<change operation="set" property="ProbaViolentDeath" type="Float32">0.65</change>
+								<change operation="set" property="Dispersion" type="Float32">150</change>
+								<change operation="set" property="DeltaDistance" type="Float32">90</change>
+								<change operation="set" property="OnHitProbaNormalWeapon" type="Float32">0.06</change>
+								<change operation="set" property="OnHitProbaOtherWeapon" type="Float32">0.01</change>
+								<change operation="set" property="IdleLookProba" type="Float32">0.03</change>
+								<change operation="set" property="ProbaTirUp" type="Float32">0.7</change>
+								<change operation="set" property="ProbaTirDown" type="Float32">0.2</change>
+								<change operation="set" property="ViseMenaceTimeMin" type="Float32">1</change>
+								<change operation="set" property="ViseMenaceTimeMax" type="Float32">7</change>
+								<change operation="set" property="ProbaViseMenace" type="Float32">0.015</change>
+								<change operation="set" property="FiringUnitRatio" type="Float32">0.6</change>
+								<change operation="set" property="DecalageSeFire" type="Float32">0.25</change>
+								<change operation="set" property="TirEmptyFrames" type="Int32">4</change>
+								<change operation="set" property="GrenadeFXDelay" type="Float32">1.8</change>
+								<change operation="set" property="FallingSpeed" type="Float32">3000</change>
+								<change operation="set" property="DroppingSpeed" type="Float32">9000</change>
+								<change operation="set" property="DroppingDistance" type="Float32">10000</change>
+								<change operation="set" property="TimeToLeaveWorldAfterDropping" type="Float32">2</change>
+								<change operation="set" property="RegroupSpeed" type="Float32">400</change>
+								<change operation="set" property="FadeInTime" type="Float32">0.5</change>
+								<change operation="set" property="MarginApparitionDistance" type="Float32">26</change>
+								<change operation="set" property="FreeFallRatio" type="Float32">0.02</change>
+								<change operation="set" property="FreeFallSpeedRatio" type="Float32">4</change>
+								<change operation="set" property="NoiseMinOscillations" type="Float32">0.5</change>
+								<change operation="set" property="NoiseMaxOscillations" type="Float32">1.5</change>
+								<change operation="set" property="HorizontalNoiseAmplitude" type="Float32">2000</change>
+								<change operation="set" property="OrientationNoiceAmplitude" type="Float32">1.5</change>
+								<change operation="set" property="OnGroundWaitingTime" type="Float32">2</change>
+							</matchconditions>
+						</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
 		</changes>
 	</ndfpatch>
 </wargamepatch>

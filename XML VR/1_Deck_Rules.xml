@@ -412,6 +412,7 @@
 			<matchcondition type="property" property="Texture">InGameLogicManagerHandler</matchcondition>
 		</matchconditions>
 		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">2</change>
 			<change property="ActivationCost" operation="clear" />
 			<change operation="add" property="ActivationCost" type="map">
 				<map>
@@ -515,6 +516,7 @@
 			<matchcondition type="property" property="Texture">StrategicLogicManagerHandler</matchcondition>
 		</matchconditions>
 		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">2</change>
 			<change property="ActivationCost" operation="clear" />
 			<change operation="add" property="ActivationCost" type="map">
 				<map>
@@ -545,7 +547,7 @@
 			<change operation="add" property="SlotsAvailable" type="map">
 				<map>
 					<key type="Int32">12</key>
-					<value type="Int32">3</value>
+					<value type="Int32">4</value>
 				</map>
 			</change>
 			<change operation="add" property="SlotsAvailable" type="map">
@@ -598,7 +600,7 @@
 			<change operation="add" property="Availability" type="map">
 				<map>
 					<key type="Int32">12</key>
-					<value type="Int32">20</value>
+					<value type="Int32">30</value>
 				</map>
 			</change>
 		</changes>

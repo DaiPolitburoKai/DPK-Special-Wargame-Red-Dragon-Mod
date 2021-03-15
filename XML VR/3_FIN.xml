@@ -109,87 +109,27 @@
 		</changes>
 	</ndfpatch>
 	
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TGroupeCombatModuleDescriptor" name="FIN Zeds Nostovaki GCMD" />
 	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TGroupeCombatModuleDescriptor" name="FIN Zeds Nostovaki GCMD set" >
 		<matchconditions>
-			<matchcondition type="property" property="__order">last</matchcondition>
+			<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
+			<matchcondition type="referencedby" table="TModuleSelector">
+				<matchconditions>
+					<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
+					<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+						<matchconditions>
+							<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
+							<matchcondition type="property" property="Factory">6</matchcondition>
+							<matchcondition type="property" property="ClassNameForDebug">Unit_Nostovaki</matchcondition>
+						</matchconditions>
+					</matchcondition>
+				</matchconditions>
+			</matchcondition>
 		</matchconditions>
 		<changes>
-			<change operation="set" property="ControllerName" type="TableString">GroupeCombatController</change>
 			<change operation="set" property="BehaviourDescriptor">
 				<reference table="TUniteBehaviourDescriptor">
 					<matchconditions>
-						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki GCBD</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="GfxPorteur">
-				<reference table="TGfxDescriptorPorteur">
-					<matchconditions>
-						<matchcondition type="property" property="_ShortDatabaseName">GfxPorteurUniteTerrestreInfanterie</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="GfxPorteurGhost">
-				<reference table="TGfxDescriptorPorteur">
-					<matchconditions>
-						<matchcondition type="property" property="_ShortDatabaseName">GfxPorteurUniteTerrestreGhost</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="GfxWeaponModels">
-				<reference table="TWeaponModelHolder">
-					<matchconditions>
-						<matchcondition type="referencedby" table="TGroupeCombatModuleDescriptor">
-							<matchconditions>
-								<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
-								<matchcondition type="referencedby" table="TModuleSelector">
-									<matchconditions>
-										<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
-										<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
-											<matchconditions>
-												<matchcondition type="property" property="MotherCountry">FIN</matchcondition>
-												<matchcondition type="property" property="Factory">6</matchcondition>
-												<matchcondition type="property" property="ClassNameForDebug">Unit_Nostovaki</matchcondition>
-											</matchconditions>
-										</matchcondition>
-									</matchconditions>
-								</matchcondition>
-							</matchconditions>
-						</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="PositionModule" type="TableString">Position</change>
-			<change operation="set" property="WeaponManagerModule" type="TableString">WeaponManager</change>
-			<change operation="set" property="CadavreModule" type="TableString">Cadavre</change>
-			<change operation="set" property="DamageModule" type="TableString">Damage</change>
-		</changes>
-	</ndfpatch>
-	
-	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki GCM" />
-	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="FIN Zeds Nostovaki GCM set" >
-		<matchconditions>
-			<matchcondition type="property" property="__order">last</matchcondition>
-		</matchconditions>
-		<changes>
-			<change operation="set" property="ControllerName" type="TableString">GroupeCombatController</change>
-			<change operation="set" property="Selection" type="List"/>
-			<change operation="add" property="Selection" type="ObjectReference">
-				<reference table="TModuleSelectorFilter">
-					<matchconditions>
-						<matchcondition type="referencedby" table="TModuleSelector">
-							<matchconditions>
-								<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
-							</matchconditions>
-						</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="Default">
-				<reference table="TGroupeCombatModuleDescriptor">
-					<matchconditions>
-						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki GCMD</matchcondition>
+						<matchcondition type="property" property="NbSoldatInGroupeCombat">8</matchcondition>
 					</matchconditions>
 				</reference>
 			</change>
@@ -265,13 +205,6 @@
 				<reference table="TModuleSelector">
 					<matchconditions>
 						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki HPM</matchcondition>
-					</matchconditions>
-				</reference>
-			</change>
-			<change operation="set" property="Modules" key="GroupeCombat" type="ObjectReference">
-				<reference table="TModuleSelector">
-					<matchconditions>
-						<matchcondition type="property" property="__createdby">FIN Zeds Nostovaki GCM</matchcondition>
 					</matchconditions>
 				</reference>
 			</change>

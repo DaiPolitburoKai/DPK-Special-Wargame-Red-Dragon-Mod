@@ -11,8 +11,8 @@ REM Config file for WGPatcher should be in same folder as batch file
 REM Lastly set ModPatcherFolder to the folder containing the WGPatcher.exe file,
 REM or ModPatcherFolder=current if it is in the same folder as the batch file.
 REM====================================================================
-SET ModFile001=T_testing.xml
-SET ModFile002=
+SET ModFile001=4__Prerequisites.xml
+SET ModFile002=T_testing.xml
 SET ModFile003=
 SET ModFile004=
 SET ModFile005=

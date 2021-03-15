@@ -1,6 +1,215 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wargamepatch>
-
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TGroupeCombatModuleDescriptor" name="JAP PSAM GCMD set" >
+		<matchconditions>
+			<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
+			<matchcondition type="referencedby" table="TModuleSelector">
+				<matchconditions>
+					<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
+					<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+						<matchconditions>
+							<matchcondition type="property" property="MotherCountry">JAP</matchcondition>
+							<matchcondition type="property" property="Factory">6</matchcondition>
+							<matchcondition type="property" property="ClassNameForDebug">Unit_JAP_Type91</matchcondition>
+						</matchconditions>
+					</matchcondition>
+				</matchconditions>
+			</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="BehaviourDescriptor">
+				<reference table="TUniteBehaviourDescriptor">
+					<matchconditions>
+						<matchcondition type="property" property="NbSoldatInGroupeCombat">6</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+		</changes>
+	</ndfpatch>
 	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TGroupeCombatModuleDescriptor" name="JAP ChuMAT GCMD set" >
+		<matchconditions>
+			<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
+			<matchcondition type="referencedby" table="TModuleSelector">
+				<matchconditions>
+					<matchcondition type="property" property="ControllerName">GroupeCombatController</matchcondition>
+					<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+						<matchconditions>
+							<matchcondition type="property" property="MotherCountry">JAP</matchcondition>
+							<matchcondition type="property" property="Factory">6</matchcondition>
+							<matchcondition type="property" property="ClassNameForDebug">Unit_JAP_ChuMAT</matchcondition>
+						</matchconditions>
+					</matchcondition>
+				</matchconditions>
+			</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="BehaviourDescriptor">
+				<reference table="TUniteBehaviourDescriptor">
+					<matchconditions>
+						<matchcondition type="property" property="NbSoldatInGroupeCombat">6</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="JAP PSAMChuMAT HPD" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="JAP PSAMChuMAT HPD set" >
+		<matchconditions>
+			<matchcondition type="property" property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ControllerName" type="TableString">DamageController</change>
+			<change operation="set" property="CommonDamageDescriptor">
+				<reference table="TModernWarfareCommonDamageDescriptor">
+					<matchconditions>
+						<matchcondition type="referencedby" table="TModernWarfareDamageModuleDescriptor">
+							<matchconditions>
+								<matchcondition type="property" property="ControllerName">DamageController</matchcondition>
+								<matchcondition type="property" property="MaxDamages">15</matchcondition>
+								<matchcondition type="property" property="MaxHPForHUD">15</matchcondition>
+							</matchconditions>
+						</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+			<change operation="set" property="MaxDamages" type="Float32">6</change>
+			<change operation="set" property="MaxHPForHUD" type="UInt32">6</change>
+			<change operation="set" property="Experience" type="TableString">Experience</change>
+			<change operation="set" property="AutoOrientation" type="Boolean">True</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="JAP PSAMChuMAT HPM" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModuleSelector" name="JAP PSAMChuMAT HPM set" >
+		<matchconditions>
+			<matchcondition type="property" property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ControllerName" type="TableString">DamageController</change>
+			<change operation="set" property="Selection" type="List"/>
+			<change operation="add" property="Selection" type="ObjectReference">
+				<reference table="TModuleSelectorFilter">
+					<matchconditions>
+						<matchcondition type="referencedby" table="TModuleSelector">
+							<matchconditions>
+								<matchcondition type="property" property="ControllerName">DamageController</matchcondition>
+							</matchconditions>
+						</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+			<change operation="set" property="Default">
+				<reference table="TModernWarfareDamageModuleDescriptor">
+					<matchconditions>
+						<matchcondition type="property" property="__createdby">JAP PSAMChuMAT HPD</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TWeaponManagerModuleDescriptor" name="JAP PSAM WMMD" >
+		<matchconditions>
+			<matchcondition type="property" property="ControllerName">WeaponManagerController</matchcondition>
+			<matchcondition type="property" property="_ShortDatabaseName">WeaponDescriptor_Unit_JAP_Type91</matchcondition>
+		</matchconditions>
+		<changes>
+            <change operation="set" property="Salves" key="0" type="Int32">12</change>
+			<change operation="set" property="Salves" key="1" type="Int32">15</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TAmmunition" name="JAP Type 91 Ammo" >
+		<matchconditions>
+			<matchcondition type="property" property="TypeArme">D7D2010000000000</matchcondition>
+			<matchcondition type="property" property="TypeName">0B06000000000000</matchcondition>
+			<matchcondition type="property" property="Name">D7D2098A07000000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="TempsDeVisee" type="Float32">0.25</change>
+			<change operation="set" property="SupplyCost" type="UInt32">20</change>
+			<change operation="set" property="FX_vitesse_de_depart" type="Float32">130000</change>
+			<change operation="set" property="PorteeMaximaleTBA" type="Float32">195000</change>
+			<change operation="set" property="PorteeMaximaleHA" type="Float32">169000</change>
+		</changes>
+	</ndfpatch>
+
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TWeaponManagerModuleDescriptor" name="JAP ChuMAT WMMD" >
+		<matchconditions>
+			<matchcondition type="property" property="ControllerName">WeaponManagerController</matchcondition>
+			<matchcondition type="property" property="_ShortDatabaseName">WeaponDescriptor_Unit_JAP_ChuMAT</matchcondition>
+		</matchconditions>
+		<changes>
+            <change operation="set" property="Salves" key="0" type="Int32">12</change>
+			<change operation="set" property="Salves" key="1" type="Int32">12</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TAmmunition" name="JAP ChuMAT Ammo" >
+		<matchconditions>
+			<matchcondition type="property" property="TypeArme">57E42D0000000000</matchcondition>
+			<matchcondition type="property" property="TypeName">0B06000000000000</matchcondition>
+			<matchcondition type="property" property="DescriptorId">00000000-0000-0000-0600-00002c090000</matchcondition>
+			<matchcondition type="property" property="Name">DE72E96D03000000</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="TempsDeVisee" type="Float32">0.25</change>
+			<change operation="set" property="SupplyCost" type="UInt32">40</change>
+			<change operation="set" property="Arme" type="UInt32">58</change>
+			<change operation="set" property="FX_vitesse_de_depart" type="Float32">104000</change>
+			<change operation="set" property="PorteeMaximale" type="Float32">195000</change>
+			<change operation="set" property="PorteeMaximaleBateaux" type="Float32">195000</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="JAP PSAM" >
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">JAP</matchcondition>
+			<matchcondition type="property" property="Factory">6</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_JAP_Type91</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">24</change>
+			<change operation="set" property="Modules" key="Damage" type="ObjectReference">
+				<reference table="TModuleSelector">
+					<matchconditions>
+						<matchcondition type="property" property="__createdby">JAP PSAMChuMAT HPM</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">8</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">6</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="JAP ChuMAT" >
+		<matchconditions>
+			<matchcondition type="property" property="MotherCountry">JAP</matchcondition>
+			<matchcondition type="property" property="Factory">6</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_JAP_ChuMAT</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">20</change>
+			<change operation="set" property="Modules" key="Damage" type="ObjectReference">
+				<reference table="TModuleSelector">
+					<matchconditions>
+						<matchcondition type="property" property="__createdby">JAP PSAMChuMAT HPM</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">10</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">8</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
 	
 </wargamepatch>

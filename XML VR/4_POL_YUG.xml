@@ -1,7 +1,84 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wargamepatch>
-	
-
-	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="POL MAZ-543 Newa-SC">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">13</matchcondition>
+			<matchcondition type="property" property="MotherCountry">POL</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_MAZ543_Newa</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">80</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="POL Sopel">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">13</matchcondition>
+			<matchcondition type="property" property="MotherCountry">POL</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_Sopel</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">42</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">7</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">5</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="POL Grom">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">6</matchcondition>
+			<matchcondition type="property" property="MotherCountry">POL</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_GROM</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">15</change>
+			<change operation="set" property="MaxPacks" type="UInt32">2</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">7</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">5</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="POL MAZ-543 Newa-SC">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">9</matchcondition>
+			<matchcondition type="property" property="MotherCountry">POL</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_T72S_POL</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">115</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="POL MAZ-543 Newa-SC">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">9</matchcondition>
+			<matchcondition type="property" property="MotherCountry">POL</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_T72_Wilk</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">111</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="POL MAZ-543 Newa-SC">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">9</matchcondition>
+			<matchcondition type="property" property="MotherCountry">POL</matchcondition>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_PT91_Twardy</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">144</change>
+			<change operation="set" property="MaxPacks" type="UInt32">2</change>
+			<change property="MaxDeployableAmount" operation="clear" />
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">6</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">4</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+            <change property="MaxDeployableAmount" type="Int32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
 	
 </wargamepatch>
